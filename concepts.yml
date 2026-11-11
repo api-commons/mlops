@@ -1,0 +1,54 @@
+context: mlops
+name: MLOps and Model Registry
+intro: >-
+  The common machine-learning-operations vocabulary -- models in a registry, their versions,
+  datasets, experiments and the runs and training jobs inside them -- distilled from the APIs that already exist.
+tags: [MLOps, Machine Learning, Model Registry, Experiment Tracking, Data Science, Model Training, AI Infrastructure]
+
+envelope: [_links, _pagination, _results, data, success, errors, count, total, page, meta, links, result, results,
+           value, next, previous, has_more, message, page_info, cursor, total_count, per_page, total_pages, object, next_page_token]
+
+common_fields:
+  id: [uuid, guid, external_id, model_id, run_id, experiment_id, dataset_id, job_id]
+  created_at: [created, created_date, create_time, creation_time, creation_timestamp, created_on]
+  updated_at: [updated, modified_at, last_modified, update_time, last_updated_timestamp, last_modified_time]
+  status: [state]
+  name: [title, display_name]
+  tags: [labels]
+
+concepts:
+  ml_model:
+    path: /ml-models
+    segments: [models, model, registered_models, registered-models]
+    aliases:
+      description: [desc]
+      framework: [library, model_type]
+  # model_version was measured and dropped: 11 readable providers, nothing at half.
+  dataset:
+    segments: [datasets, dataset]
+    aliases:
+      size: [size_bytes, num_rows, rows]
+  experiment:
+    segments: [experiments, experiment]
+  training_run:
+    path: /training-runs
+    segments: [runs@experiments|experiment|projects|mlflow|ml, runs, training_jobs, trainings, fine_tuning, fine-tuning, jobs@fine_tuning|fine-tuning|training]
+    aliases:
+      metrics: [metric, scores]
+      params: [parameters, hyperparameters, hyper_parameters]
+
+findings:
+  - >-
+    Experiments are the best-agreed MLOps resource: id, name, created_at and status, with description,
+    metadata and tags at 36%.
+  - >-
+    Datasets agree on name, id and created_at. Training runs agree on id, status and created_at -- a run is
+    a job whose metrics and parameters are shaped by each platform.
+  - >-
+    Models are exposed by 99 providers and agree only on id and name, because a model list is also the
+    inference-catalogue GET /models that api-commons/models standardizes. The registry and the inference
+    catalogue share a path, not a resource.
+decisions:
+  - >-
+    ml_model and training_run carry role names: model is the inference catalogue in models, and run
+    and job are used across ci-cd and workflow-automation.

@@ -1,0 +1,12 @@
+provider: actava
+apis_io: https://apis.io/providers/actava/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/actava-openapi.json#GET /models

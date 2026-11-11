@@ -1,0 +1,34 @@
+provider: seldon
+apis_io: https://apis.io/providers/seldon/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      name: name
+      created_at: creationTimestamp
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/seldon-enterprise-platform-api-openapi.yml#DELETE /namespaces/{namespace}/models/{name}
+    - openapi/_original/seldon-enterprise-platform-api-openapi.yml#GET /inference-logs/models
+    - openapi/_original/seldon-enterprise-platform-api-openapi.yml#GET /namespaces/{namespace}/models/{name}
+    - openapi/_original/seldon-enterprise-platform-api-openapi.yml#GET /namespaces/{namespace}/pipelines/{name}/models
+    - openapi/_original/seldon-enterprise-platform-api-openapi.yml#POST /inference-logs/namespace/{namespace}/pipelines/{pipelineName}/models/{modelName}
+  experiment:
+    path_segment:
+    - experiment
+    properties:
+      created_at: creationTimestamp
+      name: name
+      status: status
+      metadata: metadata
+      tags: labels
+      namespace: namespace
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/seldon-enterprise-platform-api-openapi.yml#DELETE /namespaces/{namespace}/pipelines/{name}/experiment
+    - openapi/_original/seldon-enterprise-platform-api-openapi.yml#GET /namespaces/{namespace}/pipelines/{name}/experiment
+    - openapi/_original/seldon-enterprise-platform-api-openapi.yml#POST /namespaces/{namespace}/pipelines/{name}/experiment
+    - openapi/_original/seldon-enterprise-platform-api-openapi.yml#PUT /namespaces/{namespace}/pipelines/{name}/experiment

@@ -1,0 +1,15 @@
+provider: carbon-arc
+apis_io: https://apis.io/providers/carbon-arc/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      id: dataset_id
+      description: description
+      status: status
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/carbon-arc-openapi.json#GET /v2/block/datasets

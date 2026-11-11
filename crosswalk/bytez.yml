@@ -1,0 +1,13 @@
+provider: bytez
+apis_io: https://apis.io/providers/bytez/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: modelId
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/bytez-openapi.yaml#GET /models/v2/list/models

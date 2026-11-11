@@ -1,0 +1,678 @@
+context: mlops
+name: MLOps and Model Registry
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - MLOps
+  - Machine Learning
+  - Model Registry
+  - Experiment Tracking
+  - Data Science
+  - Model Training
+  - AI Infrastructure
+  providers_with_harvested_openapi: 342
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  ml_model:
+    segments_seen:
+      models: 94
+      model: 7
+      registered_models: 1
+    providers_exposing: 99
+    providers_with_readable_schema: 87
+    operations:
+    - operation: GET collection
+      providers: 91
+      share: 0.919
+      tier: core
+    - operation: GET item
+      providers: 47
+      share: 0.475
+      tier: extended
+    - operation: DELETE item
+      providers: 28
+      share: 0.283
+      tier: extended
+    - operation: POST collection
+      providers: 28
+      share: 0.283
+      tier: extended
+    - operation: UPDATE item
+      providers: 18
+      share: 0.182
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 5
+      share: 0.051
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 3
+      share: 0.03
+      tier: long-tail
+    - operation: POST item
+      providers: 2
+      share: 0.02
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 57
+      share: 0.655
+      type: string
+      spellings:
+      - id
+      - modelId
+      - model_id
+      - dataset_id
+      - datasetId
+      - job_id
+    - name: name
+      tier: core
+      providers: 48
+      share: 0.552
+      type: string
+      spellings:
+      - name
+      - display_name
+      - displayName
+    - name: created_at
+      tier: extended
+      providers: 42
+      share: 0.483
+      type: string
+      spellings:
+      - created
+      - created_at
+      - createdAt
+      - creationTime
+      - createTime
+      - CreationTimestamp
+      - createdDate
+      - creationTimestamp
+    - name: description
+      tier: extended
+      providers: 31
+      share: 0.356
+      type: string
+      spellings:
+      - description
+      - Description
+    - name: owned_by
+      tier: extended
+      providers: 18
+      share: 0.207
+      type: string
+      spellings:
+      - owned_by
+    long_tail_count: 421
+    long_tail_sample:
+    - status
+    - updated_at
+    - tags
+    - type
+    - capabilities
+    - pricing
+    - context_length
+    - framework
+    - metadata
+    - model_name
+    - project_id
+    - attributes
+    - provider
+    - version
+    - api_key
+    - datacenters
+    - hugging_face_id
+    - input_modalities
+    - inputs
+    - max_output_length
+    - openrouter
+    - output_modalities
+    - outputs
+    - platform
+    - quantization
+    - start_time
+    - supported_features
+    - supported_sampling_parameters
+    - task
+    - uid
+    - versions
+    - visibility
+    - agent_id
+    - aliases
+    - base_url
+    - can_be_finetuned
+    - can_do_text_to_speech
+    - can_do_voice_conversion
+    - cost
+    - created_by
+  dataset:
+    segments_seen:
+      datasets: 32
+      dataset: 9
+    providers_exposing: 36
+    providers_with_readable_schema: 35
+    operations:
+    - operation: GET collection
+      providers: 33
+      share: 0.917
+      tier: core
+    - operation: POST collection
+      providers: 29
+      share: 0.806
+      tier: core
+    - operation: GET item
+      providers: 28
+      share: 0.778
+      tier: core
+    - operation: DELETE item
+      providers: 20
+      share: 0.556
+      tier: core
+    - operation: UPDATE item
+      providers: 16
+      share: 0.444
+      tier: extended
+    - operation: POST item
+      providers: 3
+      share: 0.083
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 2
+      share: 0.056
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.028
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 29
+      share: 0.829
+      type: string
+      spellings:
+      - name
+      - Name
+      - displayName
+      - display_name
+    - name: id
+      tier: core
+      providers: 24
+      share: 0.686
+      type: string
+      spellings:
+      - id
+      - dataset_id
+      - datasetId
+      - run_id
+    - name: created_at
+      tier: core
+      providers: 21
+      share: 0.6
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - created
+      - CreationTime
+      - CreationTimestamp
+      - createTime
+    - name: updated_at
+      tier: extended
+      providers: 14
+      share: 0.4
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+      - LastUpdatedTimestamp
+      - updated
+      - modified_at
+      - updateTime
+    - name: description
+      tier: extended
+      providers: 13
+      share: 0.371
+      type: string
+      spellings:
+      - description
+    - name: status
+      tier: extended
+      providers: 13
+      share: 0.371
+      type: string
+      spellings:
+      - status
+      - Status
+    - name: tags
+      tier: extended
+      providers: 8
+      share: 0.229
+      type: array
+      spellings:
+      - tags
+      - Tags
+      - labels
+    - name: project_id
+      tier: extended
+      providers: 7
+      share: 0.2
+      type: string
+      spellings:
+      - project_id
+      - projectId
+    long_tail_count: 249
+    long_tail_sample:
+    - type
+    - created_by
+    - metadata
+    - project_name
+    - row_count
+    - size
+    - source
+    - version
+    - visibility
+    - category
+    - columns
+    - connector
+    - data_plane_id
+    - dataset_items_count
+    - dataset_join_spec
+    - dataset_locator
+    - dataset_schema
+    - dataset_type
+    - details
+    - error
+    - experiment_count
+    - is_static
+    - join_spec
+    - last_created_experiment_at
+    - last_created_optimization_at
+    - last_updated_at
+    - last_updated_by
+    - latest_version
+    - model_problem_type
+    - most_recent_experiment_at
+    - most_recent_optimization_at
+    - optimization_count
+    - owner
+    - resource
+    - schema
+    - task_type
+    - url
+    - user_id
+    - a_size
+    - acknowledged
+  experiment:
+    segments_seen:
+      experiments: 13
+      experiment: 2
+    providers_exposing: 14
+    providers_with_readable_schema: 14
+    operations:
+    - operation: GET collection
+      providers: 13
+      share: 0.929
+      tier: core
+    - operation: POST collection
+      providers: 13
+      share: 0.929
+      tier: core
+    - operation: GET item
+      providers: 12
+      share: 0.857
+      tier: core
+    - operation: DELETE item
+      providers: 7
+      share: 0.5
+      tier: core
+    - operation: UPDATE item
+      providers: 6
+      share: 0.429
+      tier: extended
+    - operation: UPDATE collection
+      providers: 3
+      share: 0.214
+      tier: extended
+    - operation: DELETE collection
+      providers: 1
+      share: 0.071
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.071
+      tier: long-tail
+    properties:
+    - name: created_at
+      tier: core
+      providers: 12
+      share: 0.857
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - created
+      - createTime
+      - creationTimestamp
+    - name: id
+      tier: core
+      providers: 12
+      share: 0.857
+      type: string
+      spellings:
+      - id
+      - dataset_id
+      - experiment_id
+      - model_id
+      - uuid
+    - name: name
+      tier: core
+      providers: 12
+      share: 0.857
+      type: string
+      spellings:
+      - name
+      - display_name
+      - displayName
+    - name: status
+      tier: core
+      providers: 11
+      share: 0.786
+      type: string
+      spellings:
+      - status
+      - state
+    - name: description
+      tier: extended
+      providers: 5
+      share: 0.357
+      type: string
+      spellings:
+      - description
+    - name: metadata
+      tier: extended
+      providers: 5
+      share: 0.357
+      type: object
+      spellings:
+      - metadata
+    - name: tags
+      tier: extended
+      providers: 5
+      share: 0.357
+      type: array
+      spellings:
+      - tags
+      - labels
+    - name: created_by
+      tier: extended
+      providers: 4
+      share: 0.286
+      type: string
+      spellings:
+      - created_by
+    - name: end_time
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - endTime
+    - name: namespace
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - namespace
+    - name: passed_count
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: integer
+      spellings:
+      - passed_count
+      - passedCount
+    - name: project_id
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - project_id
+    - name: project_name
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - project_name
+    - name: start_time
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - startTime
+    - name: type
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - type
+    - name: updated_at
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+      - updated
+    long_tail_count: 126
+    long_tail_sample:
+    - assertion_scores
+    - comments
+    - completed_at
+    - dataset_item_count
+    - dataset_name
+    - dataset_version_id
+    - dataset_version_summary
+    - duration
+    - evaluation_method
+    - experiment_scores
+    - feedback_scores
+    - ids
+    - kind
+    - last_updated_at
+    - last_updated_by
+    - merge_tags
+    - optimization_id
+    - pass_rate
+    - prompt_version
+    - prompt_versions
+    - self_link
+    - storage_state
+    - tags_to_add
+    - tags_to_remove
+    - total_estimated_cost
+    - total_estimated_cost_avg
+    - trace_count
+    - update
+    - usage
+    - username
+    - account_id
+    - aggregate_feedback
+    - aggregate_metrics
+    - annotations
+    - api_version
+    - attributes
+    - automation_id
+    - automation_type
+    - avg_score
+    - batch_concurrency
+  training_run:
+    segments_seen:
+      runs: 28
+      jobs: 2
+      trainings: 2
+      fine_tuning: 1
+    providers_exposing: 33
+    providers_with_readable_schema: 30
+    operations:
+    - operation: GET collection
+      providers: 31
+      share: 0.939
+      tier: core
+    - operation: GET item
+      providers: 25
+      share: 0.758
+      tier: core
+    - operation: POST collection
+      providers: 22
+      share: 0.667
+      tier: core
+    - operation: DELETE item
+      providers: 7
+      share: 0.212
+      tier: extended
+    - operation: DELETE collection
+      providers: 3
+      share: 0.091
+      tier: long-tail
+    - operation: POST item
+      providers: 2
+      share: 0.061
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.061
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 2
+      share: 0.061
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 24
+      share: 0.8
+      type: string
+      spellings:
+      - id
+      - run_id
+      - runId
+      - dataset_id
+      - jobId
+      - experiment_id
+      - job_id
+    - name: status
+      tier: core
+      providers: 21
+      share: 0.7
+      type: string
+      spellings:
+      - status
+      - state
+    - name: created_at
+      tier: core
+      providers: 17
+      share: 0.567
+      type: string
+      spellings:
+      - createdAt
+      - created_at
+      - created
+    - name: name
+      tier: extended
+      providers: 10
+      share: 0.333
+      type: string
+      spellings:
+      - name
+      - title
+      - display_name
+    - name: error
+      tier: extended
+      providers: 7
+      share: 0.233
+      type: string
+      spellings:
+      - error
+    - name: started_at
+      tier: extended
+      providers: 7
+      share: 0.233
+      type: string
+      spellings:
+      - startedAt
+      - started_at
+    - name: project_id
+      tier: extended
+      providers: 6
+      share: 0.2
+      type: string
+      spellings:
+      - projectId
+      - project_id
+    - name: updated_at
+      tier: extended
+      providers: 6
+      share: 0.2
+      type: string
+      spellings:
+      - updatedAt
+      - modified_at
+      - updated_at
+    long_tail_count: 403
+    long_tail_sample:
+    - completed_at
+    - ended_at
+    - tags
+    - created_by
+    - input
+    - metadata
+    - output
+    - params
+    - start_time
+    - user_id
+    - end_time
+    - error_message
+    - files
+    - metrics
+    - schedule_id
+    - session_id
+    - agent_id
+    - agent_name
+    - all
+    - app_id
+    - context
+    - description
+    - destination
+    - duration
+    - error_code
+    - fine_tuned_model
+    - finished_at
+    - index
+    - model
+    - organization_id
+    - owner
+    - owner_id
+    - pipeline_id
+    - source
+    - status_code
+    - suffix
+    - target
+    - task_id
+    - task_type
+    - trigger

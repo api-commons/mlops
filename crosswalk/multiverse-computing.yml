@@ -1,0 +1,15 @@
+provider: multiverse-computing
+apis_io: https://apis.io/providers/multiverse-computing/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/multiverse-computing-compactifai-openapi.json#GET /v1/models
+    - openapi/_original/multiverse-computing-compactifai-openapi.json#GET /v1/models/{model}
+    - openapi/_original/multiverse-computing-compactifai-openapi.yml#GET /v1/models
+    - openapi/_original/multiverse-computing-compactifai-openapi.yml#GET /v1/models/{model}

@@ -1,0 +1,17 @@
+provider: aignostics
+apis_io: https://apis.io/providers/aignostics/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      id: run_id
+      status: state
+      name: name
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/aignostics-platform-api-openapi.json#GET /v1/runs
+    - openapi/_original/aignostics-platform-api-openapi.json#GET /v1/runs/{run_id}
+    - openapi/_original/aignostics-platform-api-openapi.json#POST /v1/runs

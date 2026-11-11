@@ -1,0 +1,22 @@
+provider: adaption
+apis_io: https://apis.io/providers/adaption/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name: name
+      id:
+      - dataset_id
+      - run_id
+      created_at: created_at
+      updated_at: updated_at
+      description: description
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/adaption-adaptive-data-api-openapi.yml#GET /api/v1/datasets
+    - openapi/_original/adaption-adaptive-data-api-openapi.yml#GET /api/v1/datasets/{dataset_id}
+    - openapi/_original/adaption-adaptive-data-api-openapi.yml#POST /api/v1/datasets

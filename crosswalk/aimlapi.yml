@@ -1,0 +1,22 @@
+provider: aimlapi
+apis_io: https://apis.io/providers/aimlapi/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/aimlapi-openapi.yml#GET /models
+  training_run:
+    path_segment:
+    - runs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/aimlapi-openapi.yml#GET /threads/{threadId}/runs
+    - openapi/_original/aimlapi-openapi.yml#GET /threads/{threadId}/runs/{runId}
+    - openapi/_original/aimlapi-openapi.yml#POST /threads/{threadId}/runs
+    - openapi/_original/aimlapi-openapi.yml#POST /threads/{threadId}/runs/{runId}

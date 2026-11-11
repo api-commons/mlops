@@ -1,0 +1,27 @@
+provider: kubeflow
+apis_io: https://apis.io/providers/kubeflow/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  experiment:
+    path_segment:
+    - experiments
+    properties:
+      created_at: created_at
+      id: experiment_id
+      name: display_name
+      description: description
+      namespace: namespace
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/kubeflow-openapi.yml#DELETE /apis/v2beta1/experiments/{experiment_id}
+    - openapi/_original/kubeflow-openapi.yml#GET /apis/v2beta1/experiments
+    - openapi/_original/kubeflow-openapi.yml#GET /apis/v2beta1/experiments/{experiment_id}
+    - openapi/_original/kubeflow-openapi.yml#POST /apis/v2beta1/experiments
+  training_run:
+    path_segment:
+    - runs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/kubeflow-openapi.yml#GET /apis/v2beta1/runs

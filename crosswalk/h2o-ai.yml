@@ -1,0 +1,14 @@
+provider: h2o-ai
+apis_io: https://apis.io/providers/h2o-ai/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: id
+      name: display_name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/h2o-ai-h2ogpte-openapi-original.yml#GET /models

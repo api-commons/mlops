@@ -1,0 +1,13 @@
+provider: sahara-ai
+apis_io: https://apis.io/providers/sahara-ai/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/sahara-ai-compute-openapi.yml#GET /compute/models

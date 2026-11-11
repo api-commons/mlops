@@ -1,0 +1,20 @@
+provider: argilla
+apis_io: https://apis.io/providers/argilla/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name: name
+      id: id
+      updated_at: updated_at
+      status: status
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/argilla-rest-api-openapi.yml#DELETE /datasets/{dataset_id}
+    - openapi/_original/argilla-rest-api-openapi.yml#GET /datasets/{dataset_id}
+    - openapi/_original/argilla-rest-api-openapi.yml#GET /me/datasets
+    - openapi/_original/argilla-rest-api-openapi.yml#PATCH /datasets/{dataset_id}
+    - openapi/_original/argilla-rest-api-openapi.yml#POST /datasets

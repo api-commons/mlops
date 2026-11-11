@@ -1,0 +1,16 @@
+provider: anomaly-detection
+apis_io: https://apis.io/providers/anomaly-detection/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      name: displayName
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/anomaly-detection-openapi.yml#DELETE /multivariate/models/{modelId}
+    - openapi/_original/anomaly-detection-openapi.yml#GET /multivariate/models
+    - openapi/_original/anomaly-detection-openapi.yml#GET /multivariate/models/{modelId}
+    - openapi/_original/anomaly-detection-openapi.yml#POST /multivariate/models

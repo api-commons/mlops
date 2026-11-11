@@ -1,0 +1,15 @@
+provider: amazon-fraud-detector
+apis_io: https://apis.io/providers/amazon-fraud-detector/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: modelId
+      description: description
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/amazon-fraud-detector-openapi.yml#POST /models
+    - openapi/_original/amazon-fraud-detector-openapi.yml#PUT /models

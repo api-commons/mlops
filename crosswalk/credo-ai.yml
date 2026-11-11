@@ -1,0 +1,17 @@
+provider: credo-ai
+apis_io: https://apis.io/providers/credo-ai/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/credo-ai-openapi.json#DELETE /models/{id}
+    - openapi/_original/credo-ai-openapi.json#DELETE /use_cases/{use_case_id}/relationships/models
+    - openapi/_original/credo-ai-openapi.json#GET /models
+    - openapi/_original/credo-ai-openapi.json#GET /models/{id}
+    - openapi/_original/credo-ai-openapi.json#PATCH /models/{id}

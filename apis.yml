@@ -1,0 +1,54 @@
+aid: common-mlops
+name: MLOps and Model Registry
+type: Common
+description: 'The common MLOps and Model Registry vocabulary, distilled from the harvested OpenAPI of 342 providers
+  in APIs.io: shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common
+  names to each provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- MLOps
+- Machine Learning
+- Model Registry
+- Experiment Tracking
+- Common Schema
+created: '2026-11-11'
+modified: '2026-11-11'
+url: https://raw.githubusercontent.com/api-commons/mlops/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-mlops:mlops
+  name: Common MLOps and Model Registry Interface
+  description: The MLOps and Model Registry interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/mlops
+  tags:
+  - MLOps
+  - Machine Learning
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/mlops/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/mlops/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/mlops/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: ml_model
+    url: https://raw.githubusercontent.com/api-commons/mlops/main/schema/ml_model.json
+  - type: JSONSchema
+    name: dataset
+    url: https://raw.githubusercontent.com/api-commons/mlops/main/schema/dataset.json
+  - type: JSONSchema
+    name: experiment
+    url: https://raw.githubusercontent.com/api-commons/mlops/main/schema/experiment.json
+  - type: JSONSchema
+    name: training_run
+    url: https://raw.githubusercontent.com/api-commons/mlops/main/schema/training_run.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/mlops/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,57 @@
+provider: qliksense
+apis_io: https://apis.io/providers/qliksense/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    - model
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/qliksense-apps.json#GET /api/v1/apps/{appId}/insight-analyses/model
+    - openapi/_original/qliksense-ml.json#GET /api/v1/ml/experiments/{experimentId}/models
+    - openapi/_original/qliksense-ml.json#GET /api/v1/ml/experiments/{experimentId}/models/{modelId}
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name: name
+      id: datasetId
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/qliksense-di-projects.json#GET /api/v1/di-projects/{projectId}/di-tasks/{dataTaskId}/runtime/runs/{runId}/state/datasets
+    - openapi/_original/qliksense-di-projects.json#GET /api/v1/di-projects/{projectId}/di-tasks/{dataTaskId}/runtime/state/datasets
+  experiment:
+    path_segment:
+    - experiments
+    properties:
+      id: id
+      type: type
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/qliksense-ml.json#DELETE /api/v1/ml/experiments/{experimentId}
+    - openapi/_original/qliksense-ml.json#GET /api/v1/ml/experiments
+    - openapi/_original/qliksense-ml.json#GET /api/v1/ml/experiments/{experimentId}
+    - openapi/_original/qliksense-ml.json#PATCH /api/v1/ml/experiments/{experimentId}
+    - openapi/_original/qliksense-ml.json#POST /api/v1/ml/experiments
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      id: id
+      status: status
+      created_at: createdAt
+      name: title
+      error: error
+      started_at: startedAt
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/qliksense-automations.json#GET /api/v1/automations/{id}/runs
+    - openapi/_original/qliksense-automations.json#GET /api/v1/automations/{id}/runs/{runId}
+    - openapi/_original/qliksense-automations.json#POST /api/v1/automations/{id}/runs
+    - openapi/_original/qliksense-scheduling-tasks.json#GET /api/scheduling/tasks/resources/{id}/runs
+    - openapi/_original/qliksense-scheduling-tasks.json#GET /api/scheduling/tasks/{id}/runs

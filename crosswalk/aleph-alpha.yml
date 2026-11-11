@@ -1,0 +1,51 @@
+provider: aleph-alpha
+apis_io: https://apis.io/providers/aleph-alpha/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: id
+      name: name
+      created_at: createdAt
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aleph-alpha-pharia-os-openapi.json#DELETE /v1/models/{modelID}
+    - openapi/_original/aleph-alpha-pharia-os-openapi.json#GET /v1/models
+    - openapi/_original/aleph-alpha-pharia-os-openapi.json#GET /v1/models/{modelID}
+    - openapi/_original/aleph-alpha-pharia-os-openapi.json#POST /v1/models
+    - openapi/_original/aleph-alpha-pharia-os-openapi.json#PUT /v1/models/{modelID}
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name: name
+      id: datasetId
+      created_at: createdAt
+      updated_at: updatedAt
+      tags: labels
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aleph-alpha-pharia-data-openapi.json#DELETE /repositories/{repositoryID}/datasets/{datasetID}
+    - openapi/_original/aleph-alpha-pharia-data-openapi.json#GET /repositories/{repositoryID}/datasets
+    - openapi/_original/aleph-alpha-pharia-data-openapi.json#GET /repositories/{repositoryID}/datasets/{datasetID}
+    - openapi/_original/aleph-alpha-pharia-data-openapi.json#PATCH /repositories/{repositoryID}/datasets/{datasetID}
+    - openapi/_original/aleph-alpha-pharia-data-openapi.json#POST /repositories/{repositoryID}/datasets
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      id: runId
+      status: status
+      created_at: createdAt
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aleph-alpha-pharia-data-openapi.json#GET /connectors/{connectorID}/runs
+    - openapi/_original/aleph-alpha-pharia-data-openapi.json#GET /stages/{stageID}/runs
+    - openapi/_original/aleph-alpha-pharia-data-openapi.json#GET /transformations/{transformationID}/runs
+    - openapi/_original/aleph-alpha-pharia-data-openapi.json#GET /transformations/{transformationID}/runs/{runID}
+    - openapi/_original/aleph-alpha-pharia-data-openapi.json#POST /transformations/{transformationID}/runs

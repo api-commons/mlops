@@ -1,0 +1,26 @@
+provider: nexgen-cloud
+apis_io: https://apis.io/providers/nexgen-cloud/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: id
+      created_at: created
+      owned_by: owned_by
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/nexgen-cloud-ai-studio-openapi.json#GET /models
+  training_run:
+    path_segment:
+    - fine_tuning
+    properties:
+      status: status
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/nexgen-cloud-hyperstack-openapi.json#GET /billing/billing/history/fine_tuning
+    - openapi/_original/nexgen-cloud-hyperstack-openapi.json#GET /billing/billing/history/fine_tuning/{resource_id}
+    - openapi/_original/nexgen-cloud-infrahub-api-openapi.json#GET /billing/billing/history/fine_tuning
+    - openapi/_original/nexgen-cloud-infrahub-api-openapi.json#GET /billing/billing/history/fine_tuning/{resource_id}

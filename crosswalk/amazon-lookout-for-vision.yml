@@ -1,0 +1,29 @@
+provider: amazon-lookout-for-vision
+apis_io: https://apis.io/providers/amazon-lookout-for-vision/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      created_at: CreationTimestamp
+      description: Description
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/amazon-lookout-for-vision-openapi-original.yaml#DELETE /2020-11-20/projects/{projectName}/models/{modelVersion}
+    - openapi/_original/amazon-lookout-for-vision-openapi-original.yaml#GET /2020-11-20/projects/{projectName}/models
+    - openapi/_original/amazon-lookout-for-vision-openapi-original.yaml#GET /2020-11-20/projects/{projectName}/models/{modelVersion}
+    - openapi/_original/amazon-lookout-for-vision-openapi-original.yaml#POST /2020-11-20/projects/{projectName}/models
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      created_at: CreationTimestamp
+      updated_at: LastUpdatedTimestamp
+      status: Status
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/amazon-lookout-for-vision-openapi-original.yaml#DELETE /2020-11-20/projects/{projectName}/datasets/{datasetType}
+    - openapi/_original/amazon-lookout-for-vision-openapi-original.yaml#GET /2020-11-20/projects/{projectName}/datasets/{datasetType}
+    - openapi/_original/amazon-lookout-for-vision-openapi-original.yaml#POST /2020-11-20/projects/{projectName}/datasets

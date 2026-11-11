@@ -1,0 +1,49 @@
+provider: qubrid-ai
+apis_io: https://apis.io/providers/qubrid-ai/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id:
+      - id
+      - job_id
+      created_at:
+      - created_at
+      - created
+      owned_by: owned_by
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/qubrid-ai-fine-tuning-openapi.yml#DELETE /fine-tuning/models/{model_id}
+    - openapi/_original/qubrid-ai-fine-tuning-openapi.yml#GET /fine-tuning/models
+    - openapi/_original/qubrid-ai-inference-openapi.yml#GET /models
+    - openapi/_original/qubrid-ai-inference-openapi.yml#GET /models/{model_id}
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name: name
+      id: id
+      created_at: created_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/qubrid-ai-fine-tuning-openapi.yml#DELETE /fine-tuning/datasets/{dataset_id}
+    - openapi/_original/qubrid-ai-fine-tuning-openapi.yml#GET /fine-tuning/datasets
+    - openapi/_original/qubrid-ai-fine-tuning-openapi.yml#GET /fine-tuning/datasets/{dataset_id}
+    - openapi/_original/qubrid-ai-fine-tuning-openapi.yml#POST /fine-tuning/datasets
+  training_run:
+    path_segment:
+    - jobs
+    properties:
+      id:
+      - id
+      - dataset_id
+      status: status
+      created_at: created_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/qubrid-ai-fine-tuning-openapi.yml#GET /fine-tuning/jobs
+    - openapi/_original/qubrid-ai-fine-tuning-openapi.yml#GET /fine-tuning/jobs/{job_id}
+    - openapi/_original/qubrid-ai-fine-tuning-openapi.yml#POST /fine-tuning/jobs

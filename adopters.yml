@@ -1,0 +1,689 @@
+context: mlops
+generated: '2026-11-11'
+adopters:
+- provider: a-alpha-bio
+  apis_io: https://apis.io/providers/a-alpha-bio/
+  crosswalk: crosswalk/a-alpha-bio.yml
+  concepts:
+  - dataset
+- provider: actava
+  apis_io: https://apis.io/providers/actava/
+  crosswalk: crosswalk/actava.yml
+  concepts:
+  - ml_model
+- provider: adaption
+  apis_io: https://apis.io/providers/adaption/
+  crosswalk: crosswalk/adaption.yml
+  concepts:
+  - dataset
+- provider: advanced-micro-devices
+  apis_io: https://apis.io/providers/advanced-micro-devices/
+  crosswalk: crosswalk/advanced-micro-devices.yml
+  concepts:
+  - ml_model
+- provider: agno
+  apis_io: https://apis.io/providers/agno/
+  crosswalk: crosswalk/agno.yml
+  concepts:
+  - ml_model
+  - training_run
+- provider: ai-squared
+  apis_io: https://apis.io/providers/ai-squared/
+  crosswalk: crosswalk/ai-squared.yml
+  concepts:
+  - ml_model
+- provider: aignostics
+  apis_io: https://apis.io/providers/aignostics/
+  crosswalk: crosswalk/aignostics.yml
+  concepts:
+  - training_run
+- provider: aimlapi
+  apis_io: https://apis.io/providers/aimlapi/
+  crosswalk: crosswalk/aimlapi.yml
+  concepts:
+  - ml_model
+  - training_run
+- provider: akkio
+  apis_io: https://apis.io/providers/akkio/
+  crosswalk: crosswalk/akkio.yml
+  concepts:
+  - dataset
+  - ml_model
+- provider: aleph-alpha
+  apis_io: https://apis.io/providers/aleph-alpha/
+  crosswalk: crosswalk/aleph-alpha.yml
+  concepts:
+  - dataset
+  - ml_model
+  - training_run
+- provider: amazon-deepracer
+  apis_io: https://apis.io/providers/amazon-deepracer/
+  crosswalk: crosswalk/amazon-deepracer.yml
+  concepts:
+  - ml_model
+- provider: amazon-forecast
+  apis_io: https://apis.io/providers/amazon-forecast/
+  crosswalk: crosswalk/amazon-forecast.yml
+  concepts:
+  - dataset
+- provider: amazon-fraud-detector
+  apis_io: https://apis.io/providers/amazon-fraud-detector/
+  crosswalk: crosswalk/amazon-fraud-detector.yml
+  concepts:
+  - ml_model
+- provider: amazon-glue-databrew
+  apis_io: https://apis.io/providers/amazon-glue-databrew/
+  crosswalk: crosswalk/amazon-glue-databrew.yml
+  concepts:
+  - dataset
+- provider: amazon-lookout-for-equipment
+  apis_io: https://apis.io/providers/amazon-lookout-for-equipment/
+  crosswalk: crosswalk/amazon-lookout-for-equipment.yml
+  concepts:
+  - dataset
+  - ml_model
+- provider: amazon-lookout-for-vision
+  apis_io: https://apis.io/providers/amazon-lookout-for-vision/
+  crosswalk: crosswalk/amazon-lookout-for-vision.yml
+  concepts:
+  - dataset
+  - ml_model
+- provider: anaconda
+  apis_io: https://apis.io/providers/anaconda/
+  crosswalk: crosswalk/anaconda.yml
+  concepts:
+  - ml_model
+- provider: anomaly-detection
+  apis_io: https://apis.io/providers/anomaly-detection/
+  crosswalk: crosswalk/anomaly-detection.yml
+  concepts:
+  - ml_model
+- provider: anthropic
+  apis_io: https://apis.io/providers/anthropic/
+  crosswalk: crosswalk/anthropic.yml
+  concepts:
+  - ml_model
+- provider: arcee-ai
+  apis_io: https://apis.io/providers/arcee-ai/
+  crosswalk: crosswalk/arcee-ai.yml
+  concepts:
+  - ml_model
+  - training_run
+- provider: archestra
+  apis_io: https://apis.io/providers/archestra/
+  crosswalk: crosswalk/archestra.yml
+  concepts:
+  - ml_model
+  - training_run
+- provider: argilla
+  apis_io: https://apis.io/providers/argilla/
+  crosswalk: crosswalk/argilla.yml
+  concepts:
+  - dataset
+- provider: arthur-ai
+  apis_io: https://apis.io/providers/arthur-ai/
+  crosswalk: crosswalk/arthur-ai.yml
+  concepts:
+  - dataset
+  - ml_model
+- provider: arthurai
+  apis_io: https://apis.io/providers/arthurai/
+  crosswalk: crosswalk/arthurai.yml
+  concepts:
+  - dataset
+  - ml_model
+- provider: azure-ai-foundry
+  apis_io: https://apis.io/providers/azure-ai-foundry/
+  crosswalk: crosswalk/azure-ai-foundry.yml
+  concepts:
+  - ml_model
+- provider: bentoml
+  apis_io: https://apis.io/providers/bentoml/
+  crosswalk: crosswalk/bentoml.yml
+  concepts:
+  - ml_model
+- provider: bigml
+  apis_io: https://apis.io/providers/bigml/
+  crosswalk: crosswalk/bigml.yml
+  concepts:
+  - dataset
+  - ml_model
+- provider: blindinsight
+  apis_io: https://apis.io/providers/blindinsight/
+  crosswalk: crosswalk/blindinsight.yml
+  concepts:
+  - dataset
+  - ml_model
+- provider: bria
+  apis_io: https://apis.io/providers/bria/
+  crosswalk: crosswalk/bria.yml
+  concepts:
+  - dataset
+  - ml_model
+- provider: bud-co
+  apis_io: https://apis.io/providers/bud-co/
+  crosswalk: crosswalk/bud-co.yml
+  concepts:
+  - ml_model
+- provider: bytez
+  apis_io: https://apis.io/providers/bytez/
+  crosswalk: crosswalk/bytez.yml
+  concepts:
+  - ml_model
+- provider: carbon-arc
+  apis_io: https://apis.io/providers/carbon-arc/
+  crosswalk: crosswalk/carbon-arc.yml
+  concepts:
+  - dataset
+- provider: cerebras-systems
+  apis_io: https://apis.io/providers/cerebras-systems/
+  crosswalk: crosswalk/cerebras-systems.yml
+  concepts:
+  - ml_model
+- provider: clarifai
+  apis_io: https://apis.io/providers/clarifai/
+  crosswalk: crosswalk/clarifai.yml
+  concepts:
+  - dataset
+  - ml_model
+  - training_run
+- provider: coactive
+  apis_io: https://apis.io/providers/coactive/
+  crosswalk: crosswalk/coactive.yml
+  concepts:
+  - dataset
+- provider: comet
+  apis_io: https://apis.io/providers/comet/
+  crosswalk: crosswalk/comet.yml
+  concepts:
+  - dataset
+  - experiment
+  - ml_model
+- provider: compresr
+  apis_io: https://apis.io/providers/compresr/
+  crosswalk: crosswalk/compresr.yml
+  concepts:
+  - ml_model
+- provider: coveo
+  apis_io: https://apis.io/providers/coveo/
+  crosswalk: crosswalk/coveo.yml
+  concepts:
+  - ml_model
+- provider: credo-ai
+  apis_io: https://apis.io/providers/credo-ai/
+  crosswalk: crosswalk/credo-ai.yml
+  concepts:
+  - ml_model
+- provider: crunchdao
+  apis_io: https://apis.io/providers/crunchdao/
+  crosswalk: crosswalk/crunchdao.yml
+  concepts:
+  - ml_model
+  - training_run
+- provider: dataiku
+  apis_io: https://apis.io/providers/dataiku/
+  crosswalk: crosswalk/dataiku.yml
+  concepts:
+  - dataset
+- provider: deepnote
+  apis_io: https://apis.io/providers/deepnote/
+  crosswalk: crosswalk/deepnote.yml
+  concepts:
+  - training_run
+- provider: determined-ai
+  apis_io: https://apis.io/providers/determined-ai/
+  crosswalk: crosswalk/determined-ai.yml
+  concepts:
+  - experiment
+  - ml_model
+- provider: discountedtokens-api
+  apis_io: https://apis.io/providers/discountedtokens-api/
+  crosswalk: crosswalk/discountedtokens-api.yml
+  concepts:
+  - ml_model
+- provider: dyno
+  apis_io: https://apis.io/providers/dyno/
+  crosswalk: crosswalk/dyno.yml
+  concepts:
+  - dataset
+  - training_run
+- provider: eden-ai
+  apis_io: https://apis.io/providers/eden-ai/
+  crosswalk: crosswalk/eden-ai.yml
+  concepts:
+  - ml_model
+- provider: edge-impulse
+  apis_io: https://apis.io/providers/edge-impulse/
+  crosswalk: crosswalk/edge-impulse.yml
+  concepts:
+  - dataset
+  - ml_model
+  - training_run
+- provider: eigenpal
+  apis_io: https://apis.io/providers/eigenpal/
+  crosswalk: crosswalk/eigenpal.yml
+  concepts:
+  - experiment
+  - ml_model
+  - training_run
+- provider: elevenlabs
+  apis_io: https://apis.io/providers/elevenlabs/
+  crosswalk: crosswalk/elevenlabs.yml
+  concepts:
+  - ml_model
+- provider: elk-stack
+  apis_io: https://apis.io/providers/elk-stack/
+  crosswalk: crosswalk/elk-stack.yml
+  concepts:
+  - dataset
+- provider: exactly-ai
+  apis_io: https://apis.io/providers/exactly-ai/
+  crosswalk: crosswalk/exactly-ai.yml
+  concepts:
+  - ml_model
+- provider: fastino-labs
+  apis_io: https://apis.io/providers/fastino-labs/
+  crosswalk: crosswalk/fastino-labs.yml
+  concepts:
+  - ml_model
+- provider: fixie
+  apis_io: https://apis.io/providers/fixie/
+  crosswalk: crosswalk/fixie.yml
+  concepts:
+  - ml_model
+- provider: friendliai
+  apis_io: https://apis.io/providers/friendliai/
+  crosswalk: crosswalk/friendliai.yml
+  concepts:
+  - dataset
+  - ml_model
+- provider: galileo-technologies
+  apis_io: https://apis.io/providers/galileo-technologies/
+  crosswalk: crosswalk/galileo-technologies.yml
+  concepts:
+  - dataset
+  - experiment
+  - ml_model
+  - training_run
+- provider: gemini
+  apis_io: https://apis.io/providers/gemini/
+  crosswalk: crosswalk/gemini.yml
+  concepts:
+  - ml_model
+- provider: gentrace
+  apis_io: https://apis.io/providers/gentrace/
+  crosswalk: crosswalk/gentrace.yml
+  concepts:
+  - dataset
+  - experiment
+- provider: google-analytics
+  apis_io: https://apis.io/providers/google-analytics/
+  crosswalk: crosswalk/google-analytics.yml
+  concepts:
+  - experiment
+- provider: google-cloud-automl
+  apis_io: https://apis.io/providers/google-cloud-automl/
+  crosswalk: crosswalk/google-cloud-automl.yml
+  concepts:
+  - dataset
+  - ml_model
+- provider: google-dialogflow
+  apis_io: https://apis.io/providers/google-dialogflow/
+  crosswalk: crosswalk/google-dialogflow.yml
+  concepts:
+  - experiment
+- provider: google-tensorflow
+  apis_io: https://apis.io/providers/google-tensorflow/
+  crosswalk: crosswalk/google-tensorflow.yml
+  concepts:
+  - ml_model
+- provider: google-vertex-ai
+  apis_io: https://apis.io/providers/google-vertex-ai/
+  crosswalk: crosswalk/google-vertex-ai.yml
+  concepts:
+  - dataset
+  - ml_model
+- provider: gradient
+  apis_io: https://apis.io/providers/gradient/
+  crosswalk: crosswalk/gradient.yml
+  concepts:
+  - ml_model
+- provider: h-company
+  apis_io: https://apis.io/providers/h-company/
+  crosswalk: crosswalk/h-company.yml
+  concepts:
+  - training_run
+- provider: h2o-ai
+  apis_io: https://apis.io/providers/h2o-ai/
+  crosswalk: crosswalk/h2o-ai.yml
+  concepts:
+  - ml_model
+- provider: hex
+  apis_io: https://apis.io/providers/hex/
+  crosswalk: crosswalk/hex.yml
+  concepts:
+  - training_run
+- provider: inception
+  apis_io: https://apis.io/providers/inception/
+  crosswalk: crosswalk/inception.yml
+  concepts:
+  - ml_model
+- provider: instabase
+  apis_io: https://apis.io/providers/instabase/
+  crosswalk: crosswalk/instabase.yml
+  concepts:
+  - training_run
+- provider: jfrog
+  apis_io: https://apis.io/providers/jfrog/
+  crosswalk: crosswalk/jfrog.yml
+  concepts:
+  - experiment
+  - ml_model
+  - training_run
+- provider: kalpa-labs
+  apis_io: https://apis.io/providers/kalpa-labs/
+  crosswalk: crosswalk/kalpa-labs.yml
+  concepts:
+  - ml_model
+- provider: kserve
+  apis_io: https://apis.io/providers/kserve/
+  crosswalk: crosswalk/kserve.yml
+  concepts:
+  - ml_model
+- provider: kubeflow
+  apis_io: https://apis.io/providers/kubeflow/
+  crosswalk: crosswalk/kubeflow.yml
+  concepts:
+  - experiment
+  - training_run
+- provider: kubeflow-pipelines
+  apis_io: https://apis.io/providers/kubeflow-pipelines/
+  crosswalk: crosswalk/kubeflow-pipelines.yml
+  concepts:
+  - experiment
+  - training_run
+- provider: kugelaudio
+  apis_io: https://apis.io/providers/kugelaudio/
+  crosswalk: crosswalk/kugelaudio.yml
+  concepts:
+  - ml_model
+- provider: landingai
+  apis_io: https://apis.io/providers/landingai/
+  crosswalk: crosswalk/landingai.yml
+  concepts:
+  - ml_model
+- provider: localai
+  apis_io: https://apis.io/providers/localai/
+  crosswalk: crosswalk/localai.yml
+  concepts:
+  - ml_model
+- provider: marqo
+  apis_io: https://apis.io/providers/marqo/
+  crosswalk: crosswalk/marqo.yml
+  concepts:
+  - ml_model
+- provider: mistral
+  apis_io: https://apis.io/providers/mistral/
+  crosswalk: crosswalk/mistral.yml
+  concepts:
+  - ml_model
+  - training_run
+- provider: modal-com
+  apis_io: https://apis.io/providers/modal-com/
+  crosswalk: crosswalk/modal-com.yml
+  concepts:
+  - training_run
+- provider: multiverse-computing
+  apis_io: https://apis.io/providers/multiverse-computing/
+  crosswalk: crosswalk/multiverse-computing.yml
+  concepts:
+  - ml_model
+- provider: nexgen-cloud
+  apis_io: https://apis.io/providers/nexgen-cloud/
+  crosswalk: crosswalk/nexgen-cloud.yml
+  concepts:
+  - ml_model
+  - training_run
+- provider: nexosai
+  apis_io: https://apis.io/providers/nexosai/
+  crosswalk: crosswalk/nexosai.yml
+  concepts:
+  - ml_model
+- provider: openrelay
+  apis_io: https://apis.io/providers/openrelay/
+  crosswalk: crosswalk/openrelay.yml
+  concepts:
+  - ml_model
+- provider: opik
+  apis_io: https://apis.io/providers/opik/
+  crosswalk: crosswalk/opik.yml
+  concepts:
+  - dataset
+  - experiment
+  - ml_model
+- provider: oracle-platforms
+  apis_io: https://apis.io/providers/oracle-platforms/
+  crosswalk: crosswalk/oracle-platforms.yml
+  concepts:
+  - ml_model
+- provider: overshoot
+  apis_io: https://apis.io/providers/overshoot/
+  crosswalk: crosswalk/overshoot.yml
+  concepts:
+  - ml_model
+- provider: oxen
+  apis_io: https://apis.io/providers/oxen/
+  crosswalk: crosswalk/oxen.yml
+  concepts:
+  - ml_model
+- provider: parea
+  apis_io: https://apis.io/providers/parea/
+  crosswalk: crosswalk/parea.yml
+  concepts:
+  - experiment
+- provider: physna
+  apis_io: https://apis.io/providers/physna/
+  crosswalk: crosswalk/physna.yml
+  concepts:
+  - ml_model
+- provider: positron
+  apis_io: https://apis.io/providers/positron/
+  crosswalk: crosswalk/positron.yml
+  concepts:
+  - ml_model
+- provider: prime-intellect
+  apis_io: https://apis.io/providers/prime-intellect/
+  crosswalk: crosswalk/prime-intellect.yml
+  concepts:
+  - ml_model
+- provider: probabl
+  apis_io: https://apis.io/providers/probabl/
+  crosswalk: crosswalk/probabl.yml
+  concepts:
+  - ml_model
+- provider: pryon
+  apis_io: https://apis.io/providers/pryon/
+  crosswalk: crosswalk/pryon.yml
+  concepts:
+  - ml_model
+- provider: qlik
+  apis_io: https://apis.io/providers/qlik/
+  crosswalk: crosswalk/qlik.yml
+  concepts:
+  - ml_model
+- provider: qliksense
+  apis_io: https://apis.io/providers/qliksense/
+  crosswalk: crosswalk/qliksense.yml
+  concepts:
+  - dataset
+  - experiment
+  - ml_model
+  - training_run
+- provider: quadrillion
+  apis_io: https://apis.io/providers/quadrillion/
+  crosswalk: crosswalk/quadrillion.yml
+  concepts:
+  - ml_model
+- provider: qubrid-ai
+  apis_io: https://apis.io/providers/qubrid-ai/
+  crosswalk: crosswalk/qubrid-ai.yml
+  concepts:
+  - dataset
+  - ml_model
+  - training_run
+- provider: rapidata
+  apis_io: https://apis.io/providers/rapidata/
+  crosswalk: crosswalk/rapidata.yml
+  concepts:
+  - dataset
+  - ml_model
+  - training_run
+- provider: rasa
+  apis_io: https://apis.io/providers/rasa/
+  crosswalk: crosswalk/rasa.yml
+  concepts:
+  - ml_model
+- provider: reasonblocks
+  apis_io: https://apis.io/providers/reasonblocks/
+  crosswalk: crosswalk/reasonblocks.yml
+  concepts:
+  - training_run
+- provider: refuel-ai
+  apis_io: https://apis.io/providers/refuel-ai/
+  crosswalk: crosswalk/refuel-ai.yml
+  concepts:
+  - dataset
+  - ml_model
+  - training_run
+- provider: replicate
+  apis_io: https://apis.io/providers/replicate/
+  crosswalk: crosswalk/replicate.yml
+  concepts:
+  - ml_model
+  - training_run
+- provider: rightnow
+  apis_io: https://apis.io/providers/rightnow/
+  crosswalk: crosswalk/rightnow.yml
+  concepts:
+  - ml_model
+- provider: runai
+  apis_io: https://apis.io/providers/runai/
+  crosswalk: crosswalk/runai.yml
+  concepts:
+  - training_run
+- provider: sahara-ai
+  apis_io: https://apis.io/providers/sahara-ai/
+  crosswalk: crosswalk/sahara-ai.yml
+  concepts:
+  - ml_model
+- provider: sail
+  apis_io: https://apis.io/providers/sail/
+  crosswalk: crosswalk/sail.yml
+  concepts:
+  - ml_model
+- provider: sail-research
+  apis_io: https://apis.io/providers/sail-research/
+  crosswalk: crosswalk/sail-research.yml
+  concepts:
+  - ml_model
+- provider: salesforce-einstein
+  apis_io: https://apis.io/providers/salesforce-einstein/
+  crosswalk: crosswalk/salesforce-einstein.yml
+  concepts:
+  - dataset
+  - ml_model
+- provider: sambanova-systems
+  apis_io: https://apis.io/providers/sambanova-systems/
+  crosswalk: crosswalk/sambanova-systems.yml
+  concepts:
+  - ml_model
+- provider: sas
+  apis_io: https://apis.io/providers/sas/
+  crosswalk: crosswalk/sas.yml
+  concepts:
+  - ml_model
+- provider: scalable-inference-serving
+  apis_io: https://apis.io/providers/scalable-inference-serving/
+  crosswalk: crosswalk/scalable-inference-serving.yml
+  concepts:
+  - ml_model
+- provider: secton-api
+  apis_io: https://apis.io/providers/secton-api/
+  crosswalk: crosswalk/secton-api.yml
+  concepts:
+  - ml_model
+- provider: segments-ai
+  apis_io: https://apis.io/providers/segments-ai/
+  crosswalk: crosswalk/segments-ai.yml
+  concepts:
+  - dataset
+- provider: seldon
+  apis_io: https://apis.io/providers/seldon/
+  crosswalk: crosswalk/seldon.yml
+  concepts:
+  - experiment
+  - ml_model
+- provider: sift
+  apis_io: https://apis.io/providers/sift/
+  crosswalk: crosswalk/sift.yml
+  concepts:
+  - training_run
+- provider: superb-ai
+  apis_io: https://apis.io/providers/superb-ai/
+  crosswalk: crosswalk/superb-ai.yml
+  concepts:
+  - dataset
+  - ml_model
+  - training_run
+- provider: tensorflow
+  apis_io: https://apis.io/providers/tensorflow/
+  crosswalk: crosswalk/tensorflow.yml
+  concepts:
+  - ml_model
+- provider: tenyks
+  apis_io: https://apis.io/providers/tenyks/
+  crosswalk: crosswalk/tenyks.yml
+  concepts:
+  - dataset
+- provider: triton
+  apis_io: https://apis.io/providers/triton/
+  crosswalk: crosswalk/triton.yml
+  concepts:
+  - ml_model
+- provider: truefoundry
+  apis_io: https://apis.io/providers/truefoundry/
+  crosswalk: crosswalk/truefoundry.yml
+  concepts:
+  - ml_model
+- provider: txt
+  apis_io: https://apis.io/providers/txt/
+  crosswalk: crosswalk/txt.yml
+  concepts:
+  - ml_model
+- provider: typesafe-ai
+  apis_io: https://apis.io/providers/typesafe-ai/
+  crosswalk: crosswalk/typesafe-ai.yml
+  concepts:
+  - ml_model
+- provider: understudy-labs
+  apis_io: https://apis.io/providers/understudy-labs/
+  crosswalk: crosswalk/understudy-labs.yml
+  concepts:
+  - ml_model
+- provider: verta
+  apis_io: https://apis.io/providers/verta/
+  crosswalk: crosswalk/verta.yml
+  concepts:
+  - ml_model
+  - training_run
+- provider: xiaomi
+  apis_io: https://apis.io/providers/xiaomi/
+  crosswalk: crosswalk/xiaomi.yml
+  concepts:
+  - ml_model
+- provider: zenml
+  apis_io: https://apis.io/providers/zenml/
+  crosswalk: crosswalk/zenml.yml
+  concepts:
+  - ml_model
+  - training_run

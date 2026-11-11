@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/mlops/main/schema/dataset.json",
+  "title": "Dataset",
+  "description": "The common dataset in MLOps and Model Registry, distilled from 35 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.829,
+      "x-commons-providers": 29,
+      "x-commons-spellings": [
+        "name",
+        "Name",
+        "displayName",
+        "display_name"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.686,
+      "x-commons-providers": 24,
+      "x-commons-spellings": [
+        "id",
+        "dataset_id",
+        "datasetId",
+        "run_id"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.6,
+      "x-commons-providers": 21,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt",
+        "created",
+        "CreationTime",
+        "CreationTimestamp",
+        "createTime"
+      ],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.4,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedAt",
+        "LastUpdatedTimestamp",
+        "updated",
+        "modified_at",
+        "updateTime"
+      ],
+      "format": "date-time"
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.371,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "description"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.371,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "status",
+        "Status"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.229,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "tags",
+        "Tags",
+        "labels"
+      ]
+    },
+    "project_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "project_id",
+        "projectId"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "mlops",
+    "concept": "dataset",
+    "providers": 35,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

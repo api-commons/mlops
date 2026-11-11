@@ -1,0 +1,23 @@
+provider: coactive
+apis_io: https://apis.io/providers/coactive/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  dataset:
+    path_segment:
+    - datasets
+    - dataset
+    properties:
+      name: name
+      id:
+      - dataset_id
+      - id
+      description: description
+      status: status
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/coactive-openapi-original.json#DELETE /api/v1/datasets/{dataset_id}
+    - openapi/_original/coactive-openapi-original.json#GET /api/v1/datasets
+    - openapi/_original/coactive-openapi-original.json#GET /api/v1/datasets/{dataset_id}
+    - openapi/_original/coactive-openapi-original.json#PATCH /api/v1/datasets/{dataset_id}
+    - openapi/_original/coactive-openapi-original.json#POST /api/v0/chat/dataset/{dataset_id}

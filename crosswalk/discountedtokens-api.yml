@@ -1,0 +1,12 @@
+provider: discountedtokens-api
+apis_io: https://apis.io/providers/discountedtokens-api/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/discountedtokens-api-openapi.json#GET /models

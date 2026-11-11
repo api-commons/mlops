@@ -1,0 +1,20 @@
+provider: runai
+apis_io: https://apis.io/providers/runai/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  training_run:
+    path_segment:
+    - trainings
+    properties:
+      status: status
+      created_at: createdAt
+      name: name
+      project_id: projectId
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/runai-openapi-original.json#DELETE /api/v1/workload-templates/trainings/{templateId}
+    - openapi/_original/runai-openapi-original.json#DELETE /api/v1/workloads/trainings/{workloadId}
+    - openapi/_original/runai-openapi-original.json#DELETE /api/v2/policy/trainings
+    - openapi/_original/runai-openapi-original.json#GET /api/v1/workload-templates/trainings
+    - openapi/_original/runai-openapi-original.json#GET /api/v1/workload-templates/trainings/{templateId}

@@ -1,0 +1,12 @@
+provider: sas
+apis_io: https://apis.io/providers/sas/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/sas-viya-rest-api-openapi.yml#GET /modelRepository/models

@@ -1,0 +1,19 @@
+provider: a-alpha-bio
+apis_io: https://apis.io/providers/a-alpha-bio/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name: name
+      id: id
+      status: status
+      tags: tags
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/a-alpha-bio-atlas-data-product-openapi-original.json#GET /api/v1/datasets
+    - openapi/_original/a-alpha-bio-atlas-data-product-openapi-original.json#GET /api/v1/datasets/{id}
+    - openapi/_original/a-alpha-bio-atlas-datasets-openapi.yml#GET /api/v1/datasets
+    - openapi/_original/a-alpha-bio-atlas-datasets-openapi.yml#GET /api/v1/datasets/{id}

@@ -1,0 +1,18 @@
+provider: hex
+apis_io: https://apis.io/providers/hex/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      id: runId
+      status: status
+      project_id: projectId
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/hex-openapi.json#DELETE /v1/projects/{projectId}/runs/{runId}
+    - openapi/_original/hex-openapi.json#GET /v1/projects/{projectId}/runs
+    - openapi/_original/hex-openapi.json#GET /v1/projects/{projectId}/runs/{runId}
+    - openapi/_original/hex-openapi.json#POST /v1/projects/{projectId}/runs

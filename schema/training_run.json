@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/mlops/main/schema/training_run.json",
+  "title": "Training Run",
+  "description": "The common training_run in MLOps and Model Registry, distilled from 30 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.8,
+      "x-commons-providers": 24,
+      "x-commons-spellings": [
+        "id",
+        "run_id",
+        "runId",
+        "dataset_id",
+        "jobId",
+        "experiment_id",
+        "job_id"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.7,
+      "x-commons-providers": 21,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.567,
+      "x-commons-providers": 17,
+      "x-commons-spellings": [
+        "createdAt",
+        "created_at",
+        "created"
+      ],
+      "format": "date-time"
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "name",
+        "title",
+        "display_name"
+      ]
+    },
+    "error": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.233,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "error"
+      ]
+    },
+    "started_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.233,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "startedAt",
+        "started_at"
+      ],
+      "format": "date-time"
+    },
+    "project_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "projectId",
+        "project_id"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "updatedAt",
+        "modified_at",
+        "updated_at"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "mlops",
+    "concept": "training_run",
+    "providers": 30,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

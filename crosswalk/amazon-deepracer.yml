@@ -1,0 +1,15 @@
+provider: amazon-deepracer
+apis_io: https://apis.io/providers/amazon-deepracer/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      created_at: creationTime
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/amazon-deepracer-openapi.yml#DELETE /20201101/models/{modelArn}
+    - openapi/_original/amazon-deepracer-openapi.yml#GET /20201101/models
+    - openapi/_original/amazon-deepracer-openapi.yml#GET /20201101/models/{modelArn}

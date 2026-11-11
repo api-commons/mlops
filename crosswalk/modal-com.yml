@@ -1,0 +1,16 @@
+provider: modal-com
+apis_io: https://apis.io/providers/modal-com/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      id: run_id
+      status: status
+      started_at: started_at
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/modal-schedules-openapi.yml#GET /schedules/{schedule_id}/runs
+    - openapi/_original/modal-schedules-openapi.yml#POST /schedules/{schedule_id}/runs

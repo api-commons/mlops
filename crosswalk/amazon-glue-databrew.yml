@@ -1,0 +1,18 @@
+provider: amazon-glue-databrew
+apis_io: https://apis.io/providers/amazon-glue-databrew/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name: Name
+      tags: Tags
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/amazon-glue-databrew-openapi.yaml#DELETE /datasets/{name}
+    - openapi/_original/amazon-glue-databrew-openapi.yaml#GET /datasets
+    - openapi/_original/amazon-glue-databrew-openapi.yaml#GET /datasets/{name}
+    - openapi/_original/amazon-glue-databrew-openapi.yaml#POST /datasets
+    - openapi/_original/amazon-glue-databrew-openapi.yaml#PUT /datasets/{name}

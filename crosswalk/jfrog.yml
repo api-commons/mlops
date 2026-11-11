@@ -1,0 +1,49 @@
+provider: jfrog
+apis_io: https://apis.io/providers/jfrog/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: id
+      name: name
+      created_at: created_at
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/jfrog-ml-openapi.yml#DELETE /v1/models/{modelId}
+    - openapi/_original/jfrog-ml-openapi.yml#GET /v1/models
+    - openapi/_original/jfrog-ml-openapi.yml#GET /v1/models/{modelId}
+    - openapi/_original/jfrog-ml-openapi.yml#POST /v1/models
+    - openapi/_original/jfrog-ml-openapi.yml#PUT /v1/models/{modelId}
+  experiment:
+    path_segment:
+    - experiments
+    properties:
+      created_at: created_at
+      id:
+      - id
+      - model_id
+      name: name
+      status: status
+      description: description
+      created_by: created_by
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/jfrog-ml-openapi.yml#DELETE /v1/experiments/{experimentId}
+    - openapi/_original/jfrog-ml-openapi.yml#GET /v1/experiments
+    - openapi/_original/jfrog-ml-openapi.yml#GET /v1/experiments/{experimentId}
+    - openapi/_original/jfrog-ml-openapi.yml#POST /v1/experiments
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      id: id
+      created_at: createdAt
+      started_at: startedAt
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/jfrog-pipelines-openapi.yml#GET /v1/runs
+    - openapi/_original/jfrog-pipelines-openapi.yml#GET /v1/runs/{runId}

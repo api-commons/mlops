@@ -1,0 +1,12 @@
+provider: azure-ai-foundry
+apis_io: https://apis.io/providers/azure-ai-foundry/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/azure-ai-foundry-openapi.yml#GET /models

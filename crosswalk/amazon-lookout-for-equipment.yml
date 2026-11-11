@@ -1,0 +1,24 @@
+provider: amazon-lookout-for-equipment
+apis_io: https://apis.io/providers/amazon-lookout-for-equipment/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/amazon-lookout-for-equipment-openapi.yml#GET /models
+    - openapi/_original/amazon-lookout-for-equipment-openapi.yml#GET /models/{ModelName}
+    - openapi/_original/amazon-lookout-for-equipment-openapi.yml#POST /models
+  dataset:
+    path_segment:
+    - datasets
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/amazon-lookout-for-equipment-openapi.yml#DELETE /datasets/{DatasetName}
+    - openapi/_original/amazon-lookout-for-equipment-openapi.yml#GET /datasets
+    - openapi/_original/amazon-lookout-for-equipment-openapi.yml#GET /datasets/{DatasetName}
+    - openapi/_original/amazon-lookout-for-equipment-openapi.yml#POST /datasets

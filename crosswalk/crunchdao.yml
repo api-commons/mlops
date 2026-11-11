@@ -1,0 +1,35 @@
+provider: crunchdao
+apis_io: https://apis.io/providers/crunchdao/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    - model
+    properties:
+      id: id
+      name: name
+      created_at: createdAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/crunchdao-tournament-openapi.json#GET /v1/runner/runs/{runId}/model
+    - openapi/_original/crunchdao-tournament-openapi.json#GET /v3/competitions/{competitionIdentifier}/projects/{userLogin}/{projectIdentifier}/models
+    - openapi/_original/crunchdao-tournament-openapi.json#GET /v3/competitions/{competitionIdentifier}/projects/{userLogin}/{projectIdentifier}/models/{modelId}
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      id: id
+      status: status
+      created_at: createdAt
+      name: name
+      started_at: startedAt
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/crunchdao-tournament-openapi.json#DELETE /admin/runs
+    - openapi/_original/crunchdao-tournament-openapi.json#DELETE /admin/runs/{runId}
+    - openapi/_original/crunchdao-tournament-openapi.json#DELETE /v3/competitions/{competitionIdentifier}/projects/{userLogin}/{projectIdentifier}/runs/{runId}
+    - openapi/_original/crunchdao-tournament-openapi.json#GET /admin/runs
+    - openapi/_original/crunchdao-tournament-openapi.json#GET /v2/competitions/{competitionIdentifier}/export/runs

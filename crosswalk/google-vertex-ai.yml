@@ -1,0 +1,26 @@
+provider: google-vertex-ai
+apis_io: https://apis.io/providers/google-vertex-ai/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      name:
+      - name
+      - displayName
+      created_at: createTime
+      description: description
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/openapi.yml#DELETE /projects/{project}/locations/{location}/models/{model}
+    - openapi/_original/openapi.yml#GET /projects/{project}/locations/{location}/models
+    - openapi/_original/openapi.yml#GET /projects/{project}/locations/{location}/models/{model}
+  dataset:
+    path_segment:
+    - datasets
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/openapi.yml#GET /projects/{project}/locations/{location}/datasets

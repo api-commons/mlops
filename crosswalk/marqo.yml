@@ -1,0 +1,12 @@
+provider: marqo
+apis_io: https://apis.io/providers/marqo/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/marqo-openapi.yml#GET /models

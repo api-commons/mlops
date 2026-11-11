@@ -1,0 +1,39 @@
+provider: salesforce-einstein
+apis_io: https://apis.io/providers/salesforce-einstein/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id:
+      - id
+      - modelId
+      - datasetId
+      name: name
+      created_at:
+      - createdDate
+      - createdAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/salesforce-einstein-discovery-openapi.yml#DELETE /wave/models/{modelId}
+    - openapi/_original/salesforce-einstein-discovery-openapi.yml#GET /wave/models
+    - openapi/_original/salesforce-einstein-discovery-openapi.yml#GET /wave/models/{modelId}
+    - openapi/_original/salesforce-einstein-gpt-openapi.yml#GET /einstein/llm/models
+    - openapi/_original/salesforce-einstein-gpt-openapi.yml#GET /einstein/llm/models/{modelId}
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name: name
+      id: id
+      created_at: createdAt
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/salesforce-einstein-language-openapi.yml#DELETE /datasets/{datasetId}
+    - openapi/_original/salesforce-einstein-language-openapi.yml#GET /datasets
+    - openapi/_original/salesforce-einstein-language-openapi.yml#GET /datasets/{datasetId}
+    - openapi/_original/salesforce-einstein-language-openapi.yml#POST /datasets
+    - openapi/_original/salesforce-einstein-vision-openapi.yml#DELETE /datasets/{datasetId}

@@ -1,0 +1,16 @@
+provider: compresr
+apis_io: https://apis.io/providers/compresr/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/compresr-openapi.json#GET /api/compress/history/models
+    - openapi/_original/compresr-openapi.json#GET /api/compress/history/models/{model_id}
+    - openapi/_original/compresr-openapi.json#GET /api/compress/models
+    - openapi/_original/compresr-openapi.json#GET /api/compress/models/{model_id}
+    - openapi/_original/compresr-openapi.json#GET /api/compress/question-specific/models

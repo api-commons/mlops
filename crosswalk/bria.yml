@@ -1,0 +1,39 @@
+provider: bria
+apis_io: https://apis.io/providers/bria/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id:
+      - id
+      - dataset_id
+      name: name
+      created_at: created_at
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/bria-tailored-generation-openapi-original.yml#DELETE /tailored-gen/models/{model_id}
+    - openapi/_original/bria-tailored-generation-openapi-original.yml#GET /tailored-gen/models
+    - openapi/_original/bria-tailored-generation-openapi-original.yml#GET /tailored-gen/models/{model_id}
+    - openapi/_original/bria-tailored-generation-openapi-original.yml#GET /tailored-gen/projects/{project_id}/models
+    - openapi/_original/bria-tailored-generation-openapi-original.yml#POST /tailored-gen/models
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name: name
+      id: id
+      created_at: created_at
+      updated_at: updated_at
+      status: status
+      project_id: project_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/bria-tailored-generation-openapi-original.yml#DELETE /tailored-gen/datasets/{dataset_id}
+    - openapi/_original/bria-tailored-generation-openapi-original.yml#GET /tailored-gen/datasets
+    - openapi/_original/bria-tailored-generation-openapi-original.yml#GET /tailored-gen/datasets/{dataset_id}
+    - openapi/_original/bria-tailored-generation-openapi-original.yml#GET /tailored-gen/projects/{project_id}/datasets
+    - openapi/_original/bria-tailored-generation-openapi-original.yml#POST /tailored-gen/datasets

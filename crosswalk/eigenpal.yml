@@ -1,0 +1,38 @@
+provider: eigenpal
+apis_io: https://apis.io/providers/eigenpal/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/eigenpal-openapi.json#GET /v1/models
+  experiment:
+    path_segment:
+    - experiments
+    properties:
+      created_at: createdAt
+      id: id
+      status: status
+      passed_count: passedCount
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/eigenpal-openapi.json#GET /v1/automations/{id}/experiments
+    - openapi/_original/eigenpal-openapi.json#GET /v1/automations/{id}/experiments/{experimentId}
+    - openapi/_original/eigenpal-openapi.json#GET /v1/experiments/{experimentId}
+    - openapi/_original/eigenpal-openapi.json#POST /v1/automations/{id}/experiments
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      id: id
+      error: error
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/eigenpal-openapi.json#GET /v1/runs
+    - openapi/_original/eigenpal-openapi.json#GET /v1/runs/{id}
+    - openapi/_original/eigenpal-openapi.json#POST /v1/runs

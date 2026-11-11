@@ -1,0 +1,20 @@
+provider: oxen
+apis_io: https://apis.io/providers/oxen/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: id
+      name: display_name
+      created_at: created
+      description: description
+      owned_by: owned_by
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/oxen-hub-api-openapi-original.json#DELETE /api/ai/models/{id}
+    - openapi/_original/oxen-hub-api-openapi-original.json#GET /api/ai/models
+    - openapi/_original/oxen-hub-api-openapi-original.json#GET /api/ai/models/{id}
+    - openapi/_original/oxen-hub-api-openapi-original.json#PUT /api/ai/models/{id}

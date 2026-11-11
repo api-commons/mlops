@@ -1,0 +1,24 @@
+provider: replicate
+apis_io: https://apis.io/providers/replicate/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      name: name
+      description: description
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/replicate-openapi.yml#GET /models
+    - openapi/_original/replicate-openapi.yml#POST /models
+  training_run:
+    path_segment:
+    - trainings
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/replicate-openapi.yml#GET /trainings
+    - openapi/_original/replicate-openapi.yml#GET /trainings/{training_id}
+    - openapi/_original/replicate-openapi.yml#POST /models/{model_owner}/{model_name}/versions/{version_id}/trainings

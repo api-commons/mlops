@@ -1,0 +1,38 @@
+provider: edge-impulse
+apis_io: https://apis.io/providers/edge-impulse/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - model
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/edge-impulse-openapi.yml#GET /api/{projectId}/learn-data/{learnId}/model/{modelDownloadId}
+    - openapi/_original/edge-impulse-studio-openapi-2026-09-06.yml#GET /api/{projectId}/learn-data/{learnId}/model/{modelDownloadId}
+  dataset:
+    path_segment:
+    - dataset
+    - datasets
+    properties:
+      id: id
+      tags: tags
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/edge-impulse-openapi.yml#GET /api/organizations/{organizationId}/dataset/{dataset}
+    - openapi/_original/edge-impulse-openapi.yml#POST /api/organizations/{organizationId}/dataset
+    - openapi/_original/edge-impulse-openapi.yml#POST /api/organizations/{organizationId}/dataset/{dataset}
+    - openapi/_original/edge-impulse-openapi.yml#POST /api/organizations/{organizationId}/members/{memberId}/datasets
+    - openapi/_original/edge-impulse-studio-openapi-2026-09-06.yml#GET /api/organizations/{organizationId}/dataset/{dataset}
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      created_at: created
+      name: name
+      error: error
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/edge-impulse-openapi.yml#GET /api/{projectId}/optimize/runs
+    - openapi/_original/edge-impulse-studio-openapi-2026-09-06.yml#GET /api/{projectId}/optimize/runs

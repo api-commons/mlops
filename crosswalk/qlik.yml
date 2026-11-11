@@ -1,0 +1,12 @@
+provider: qlik
+apis_io: https://apis.io/providers/qlik/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - model
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/apps.json#GET /api/v1/apps/{appId}/insight-analyses/model

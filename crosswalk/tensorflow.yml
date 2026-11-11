@@ -1,0 +1,12 @@
+provider: tensorflow
+apis_io: https://apis.io/providers/tensorflow/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/tensorflow-serving-openapi.yml#GET /v1/models/{model_name}

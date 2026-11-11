@@ -1,0 +1,18 @@
+provider: coveo
+apis_io: https://apis.io/providers/coveo/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - model
+    - models
+    properties:
+      id: modelId
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/coveo-machine-learning-openapi-original.yml#DELETE /rest/organizations/{organizationId}/machinelearning/engines/{engineId}/models/{modelName}
+    - openapi/_original/coveo-machine-learning-openapi-original.yml#DELETE /rest/organizations/{organizationId}/machinelearning/models/{modelId}
+    - openapi/_original/coveo-machine-learning-openapi-original.yml#GET /rest/organizations/{organizationId}/machinelearning/models
+    - openapi/_original/coveo-machine-learning-openapi-original.yml#GET /rest/organizations/{organizationId}/machinelearning/models/{modelId}
+    - openapi/_original/coveo-machine-learning-openapi-original.yml#POST /rest/organizations/{organizationId}/machinelearning/model

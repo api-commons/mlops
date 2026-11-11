@@ -1,0 +1,34 @@
+provider: bigml
+apis_io: https://apis.io/providers/bigml/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - model
+    properties:
+      name: name
+      created_at: created
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/openapi.yml#DELETE /model/{resource_id}
+    - openapi/_original/openapi.yml#GET /model
+    - openapi/_original/openapi.yml#GET /model/{resource_id}
+    - openapi/_original/openapi.yml#POST /model
+    - openapi/_original/openapi.yml#PUT /model/{resource_id}
+  dataset:
+    path_segment:
+    - dataset
+    properties:
+      name: name
+      created_at: created
+      updated_at: updated
+      status: status
+      tags: tags
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/openapi.yml#DELETE /dataset/{resource_id}
+    - openapi/_original/openapi.yml#GET /dataset
+    - openapi/_original/openapi.yml#GET /dataset/{resource_id}
+    - openapi/_original/openapi.yml#POST /dataset
+    - openapi/_original/openapi.yml#PUT /dataset/{resource_id}

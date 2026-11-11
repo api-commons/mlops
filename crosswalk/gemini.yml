@@ -1,0 +1,17 @@
+provider: gemini
+apis_io: https://apis.io/providers/gemini/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      name:
+      - name
+      - displayName
+      description: description
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/gemini-openapi.yml#GET /v1beta/models
+    - openapi/_original/gemini-openapi.yml#GET /v1beta/models/{model}

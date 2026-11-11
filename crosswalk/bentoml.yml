@@ -1,0 +1,19 @@
+provider: bentoml
+apis_io: https://apis.io/providers/bentoml/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      name: name
+      created_at: created_at
+      description: description
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/bentoml-bentocloud-deployment-api-openapi.yml#DELETE /api/v1/model_repositories/{modelRepositoryName}/models/{version}
+    - openapi/_original/bentoml-bentocloud-deployment-api-openapi.yml#GET /api/admin/v1/orgs/{orgName}/models
+    - openapi/_original/bentoml-bentocloud-deployment-api-openapi.yml#GET /api/v1/bento_repositories/{bentoRepositoryName}/bentos/{version}/models
+    - openapi/_original/bentoml-bentocloud-deployment-api-openapi.yml#GET /api/v1/model_repositories/{modelRepositoryName}/models
+    - openapi/_original/bentoml-bentocloud-deployment-api-openapi.yml#GET /api/v1/model_repositories/{modelRepositoryName}/models/{version}

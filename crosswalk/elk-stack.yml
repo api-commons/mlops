@@ -1,0 +1,17 @@
+provider: elk-stack
+apis_io: https://apis.io/providers/elk-stack/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  dataset:
+    path_segment:
+    - dataset
+    properties:
+      name: name
+      description: description
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/elk-stack-elasticsearch-openapi.json#DELETE /_query/dataset/{name}
+    - openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_query/dataset
+    - openapi/_original/elk-stack-elasticsearch-openapi.json#GET /_query/dataset/{name}
+    - openapi/_original/elk-stack-elasticsearch-openapi.json#PUT /_query/dataset/{name}

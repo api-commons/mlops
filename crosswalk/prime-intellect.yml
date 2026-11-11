@@ -1,0 +1,12 @@
+provider: prime-intellect
+apis_io: https://apis.io/providers/prime-intellect/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/prime-intellect-evaluations-api-openapi.yml#GET /api/v1/hosted-evaluations/models

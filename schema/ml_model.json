@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/mlops/main/schema/ml_model.json",
+  "title": "Ml Model",
+  "description": "The common ml_model in MLOps and Model Registry, distilled from 87 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.655,
+      "x-commons-providers": 57,
+      "x-commons-spellings": [
+        "id",
+        "modelId",
+        "model_id",
+        "dataset_id",
+        "datasetId",
+        "job_id"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.552,
+      "x-commons-providers": 48,
+      "x-commons-spellings": [
+        "name",
+        "display_name",
+        "displayName"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.483,
+      "x-commons-providers": 42,
+      "x-commons-spellings": [
+        "created",
+        "created_at",
+        "createdAt",
+        "creationTime",
+        "createTime",
+        "CreationTimestamp",
+        "createdDate",
+        "creationTimestamp"
+      ],
+      "format": "date-time"
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.356,
+      "x-commons-providers": 31,
+      "x-commons-spellings": [
+        "description",
+        "Description"
+      ]
+    },
+    "owned_by": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.207,
+      "x-commons-providers": 18,
+      "x-commons-spellings": [
+        "owned_by"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "mlops",
+    "concept": "ml_model",
+    "providers": 87,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

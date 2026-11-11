@@ -1,0 +1,42 @@
+provider: superb-ai
+apis_io: https://apis.io/providers/superb-ai/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: id
+      name: name
+      created_at: created_at
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/superb-ai-mlops-platform-openapi.json#DELETE /tenants/{slug}/models/{model_id}
+    - openapi/_original/superb-ai-mlops-platform-openapi.json#GET /tenants/{slug}/models
+    - openapi/_original/superb-ai-mlops-platform-openapi.json#GET /tenants/{slug}/models/{model_id}
+    - openapi/_original/superb-ai-mlops-platform-openapi.json#PATCH /tenants/{slug}/models/{model_id}
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name: name
+      id: id
+      created_at: created_at
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/superb-ai-mlops-platform-openapi.json#GET /tenants/{slug}/datasets
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      id: id
+      status: status
+      created_at: created_at
+      error: error
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/superb-ai-mlops-platform-openapi.json#GET /tenants/{slug}/projects/{project_id}/auto-label/runs
+    - openapi/_original/superb-ai-mlops-platform-openapi.json#POST /tenants/{slug}/projects/{project_id}/auto-label/runs

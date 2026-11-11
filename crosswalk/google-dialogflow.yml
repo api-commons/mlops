@@ -1,0 +1,24 @@
+provider: google-dialogflow
+apis_io: https://apis.io/providers/google-dialogflow/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  experiment:
+    path_segment:
+    - experiments
+    properties:
+      created_at: createTime
+      name:
+      - displayName
+      - name
+      status: state
+      description: description
+      end_time: endTime
+      start_time: startTime
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/google-dialogflow-cx-v3-openapi.yml#DELETE /v3/projects/{projectsId}/locations/{locationsId}/agents/{agentsId}/environments/{environmentsId}/experiments/{experimentsId}
+    - openapi/_original/google-dialogflow-cx-v3-openapi.yml#GET /v3/projects/{projectsId}/locations/{locationsId}/agents/{agentsId}/environments/{environmentsId}/experiments
+    - openapi/_original/google-dialogflow-cx-v3-openapi.yml#GET /v3/projects/{projectsId}/locations/{locationsId}/agents/{agentsId}/environments/{environmentsId}/experiments/{experimentsId}
+    - openapi/_original/google-dialogflow-cx-v3-openapi.yml#PATCH /v3/projects/{projectsId}/locations/{locationsId}/agents/{agentsId}/environments/{environmentsId}/experiments/{experimentsId}
+    - openapi/_original/google-dialogflow-cx-v3-openapi.yml#POST /v3/projects/{projectsId}/locations/{locationsId}/agents/{agentsId}/environments/{environmentsId}/experiments

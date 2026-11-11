@@ -1,0 +1,38 @@
+provider: refuel-ai
+apis_io: https://apis.io/providers/refuel-ai/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/refuel-ai-cloud-api-openapi.json#GET /models
+    - openapi/_original/refuel-ai-cloud-api-openapi.json#GET /tasks/{task_id}/models
+    - openapi/_original/refuel-ai-cloud-api-openapi.yml#GET /models
+    - openapi/_original/refuel-ai-cloud-api-openapi.yml#GET /tasks/{task_id}/models
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name: name
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/refuel-ai-cloud-api-openapi.json#DELETE /datasets/{dataset_id}
+    - openapi/_original/refuel-ai-cloud-api-openapi.json#GET /datasets
+    - openapi/_original/refuel-ai-cloud-api-openapi.json#GET /datasets/{dataset_id}
+    - openapi/_original/refuel-ai-cloud-api-openapi.json#GET /tasks/{task_id}/datasets/{dataset_id}
+    - openapi/_original/refuel-ai-cloud-api-openapi.json#PATCH /datasets/{dataset_id}
+  training_run:
+    path_segment:
+    - runs
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/refuel-ai-cloud-api-openapi.json#DELETE /tasks/{task_id}/runs/{dataset_id}
+    - openapi/_original/refuel-ai-cloud-api-openapi.json#GET /tasks/{task_id}/evalset/runs
+    - openapi/_original/refuel-ai-cloud-api-openapi.json#GET /tasks/{task_id}/runs
+    - openapi/_original/refuel-ai-cloud-api-openapi.json#GET /tasks/{task_id}/runs/{dataset_id}
+    - openapi/_original/refuel-ai-cloud-api-openapi.json#POST /tasks/{task_id}/evalset/runs

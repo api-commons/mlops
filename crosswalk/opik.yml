@@ -1,0 +1,56 @@
+provider: opik
+apis_io: https://apis.io/providers/opik/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/opik-rest-api-openapi.yml#GET /v1/private/llm/models
+    - openapi/_original/opik-rest-api-openapi.yml#POST /v1/private/ollama/models
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name: name
+      id: id
+      created_at: created_at
+      description: description
+      status: status
+      tags: tags
+      project_id: project_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/opik-rest-api-openapi.yml#DELETE /v1/private/datasets/{id}
+    - openapi/_original/opik-rest-api-openapi.yml#GET /v1/private/datasets
+    - openapi/_original/opik-rest-api-openapi.yml#GET /v1/private/datasets/{id}
+    - openapi/_original/opik-rest-api-openapi.yml#GET /v1/private/projects/{projectId}/datasets
+    - openapi/_original/opik-rest-api-openapi.yml#GET /v1/session/redirect/datasets
+  experiment:
+    path_segment:
+    - experiments
+    properties:
+      created_at: created_at
+      id:
+      - id
+      - dataset_id
+      name: name
+      status: status
+      metadata: metadata
+      tags: tags
+      created_by: created_by
+      passed_count: passed_count
+      project_id: project_id
+      project_name: project_name
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/opik-rest-api-openapi.yml#GET /v1/private/experiments
+    - openapi/_original/opik-rest-api-openapi.yml#GET /v1/private/experiments/{id}
+    - openapi/_original/opik-rest-api-openapi.yml#GET /v1/private/projects/{projectId}/experiments
+    - openapi/_original/opik-rest-api-openapi.yml#GET /v1/session/redirect/experiments
+    - openapi/_original/opik-rest-api-openapi.yml#PATCH /v1/private/experiments/batch

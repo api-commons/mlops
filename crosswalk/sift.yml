@@ -1,0 +1,14 @@
+provider: sift
+apis_io: https://apis.io/providers/sift/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      id: id
+      status: state
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/sift-openapi.yml#GET /v3/accounts/{account_id}/workflows/runs/{run_id}

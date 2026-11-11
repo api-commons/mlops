@@ -1,0 +1,35 @@
+provider: verta
+apis_io: https://apis.io/providers/verta/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - registered_models
+    properties:
+      id: id
+      name: name
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/verta-RegistryService.swagger.json#DELETE /registered_models/{id.registered_model_id}
+    - openapi/_original/verta-RegistryService.swagger.json#DELETE /workspaces/{id.named_id.workspace_name}/registered_models/{id.named_id.name}
+    - openapi/_original/verta-RegistryService.swagger.json#GET /registered_models/{id.registered_model_id}
+    - openapi/_original/verta-RegistryService.swagger.json#GET /workspaces/{id.named_id.workspace_name}/registered_models/{id.named_id.name}
+    - openapi/_original/verta-RegistryService.swagger.json#PATCH /registered_models/{id.registered_model_id}
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      id:
+      - id
+      - experiment_id
+      - job_id
+      name: name
+      project_id: project_id
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/verta-ExperimentRunService.swagger.json#GET /versioning/repositories/{repository_id.repo_id}/commits/{commit_sha}/path/runs
+    - openapi/_original/verta-ExperimentRunService.swagger.json#GET /versioning/repositories/{repository_id.repo_id}/commits/{commit_sha}/runs
+    - openapi/_original/verta-ExperimentRunService.swagger.json#GET /versioning/workspaces/{repository_id.named_id.workspace_name}/repositories/{repository_id.named_id.name}/commits/{commit_sha}/path/runs
+    - openapi/_original/verta-ExperimentRunService.swagger.json#GET /versioning/workspaces/{repository_id.named_id.workspace_name}/repositories/{repository_id.named_id.name}/commits/{commit_sha}/runs

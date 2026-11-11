@@ -1,0 +1,16 @@
+provider: pryon
+apis_io: https://apis.io/providers/pryon/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/pryon-chat-completion-only-generative-openapi.json#GET /api/generative/v1alpha1/chat/completions/models
+    - openapi/_original/pryon-chat-completion-openapi.json#GET /api/generative/v1alpha1/chat/completions/models
+    - openapi/_original/pryon-extra-chat-completion-openapi.json#GET /api/generative/v1alpha1/chat/completions/models
+    - openapi/_original/pryon-gen-answer-summary-openapi.json#GET /api/generative/v1alpha1/chat/completions/models
+    - openapi/_original/pryon-generative-listmodels-openapi.json#GET /api/generative/v1alpha1/chat/completions/models

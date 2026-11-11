@@ -1,0 +1,54 @@
+provider: clarifai
+apis_io: https://apis.io/providers/clarifai/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: id
+      name:
+      - name
+      - display_name
+      created_at: created_at
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/openapi.json#DELETE /v2/models
+    - openapi/_original/openapi.json#DELETE /v2/models/{model_id}
+    - openapi/_original/openapi.json#DELETE /v2/users/{user_app_id.user_id}/apps/{user_app_id.app_id}/models
+    - openapi/_original/openapi.json#DELETE /v2/users/{user_app_id.user_id}/apps/{user_app_id.app_id}/models/{model_id}
+    - openapi/_original/openapi.json#GET /v2/models
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      id: id
+      created_at: created_at
+      updated_at: modified_at
+      description: description
+      status: status
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/openapi.json#DELETE /v2/datasets
+    - openapi/_original/openapi.json#DELETE /v2/users/{user_app_id.user_id}/apps/{user_app_id.app_id}/datasets
+    - openapi/_original/openapi.json#GET /v2/datasets
+    - openapi/_original/openapi.json#GET /v2/datasets/{dataset_id}
+    - openapi/_original/openapi.json#GET /v2/users/{user_app_id.user_id}/apps/{user_app_id.app_id}/datasets
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      id: id
+      status: status
+      created_at: created_at
+      started_at: started_at
+      updated_at: modified_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/openapi.json#GET /v2/pipelines/{pipeline_id}/versions/{pipeline_version_id}/runs/{pipeline_version_run_id}
+    - openapi/_original/openapi.json#GET /v2/users/{user_app_id.user_id}/apps/{user_app_id.app_id}/pipelines/{pipeline_id}/versions/{pipeline_version_id}/runs
+    - openapi/_original/openapi.json#GET /v2/users/{user_app_id.user_id}/apps/{user_app_id.app_id}/pipelines/{pipeline_id}/versions/{pipeline_version_id}/runs/{pipeline_version_run_id}
+    - openapi/_original/openapi.json#PATCH /v2/users/{user_app_id.user_id}/apps/{user_app_id.app_id}/pipelines/{pipeline_id}/versions/{pipeline_version_id}/runs
+    - openapi/_original/openapi.json#POST /v2/users/{user_app_id.user_id}/apps/{user_app_id.app_id}/pipelines/{pipeline_id}/versions/{pipeline_version_id}/runs

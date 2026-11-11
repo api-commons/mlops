@@ -1,0 +1,15 @@
+provider: sambanova-systems
+apis_io: https://apis.io/providers/sambanova-systems/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: id
+      owned_by: owned_by
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/sambanova-systems-cloud-openapi-original.yml#GET /models
+    - openapi/_original/sambanova-systems-cloud-openapi-original.yml#GET /models/{model_id}

@@ -1,0 +1,35 @@
+provider: mistral
+apis_io: https://apis.io/providers/mistral/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: id
+      name: name
+      created_at: created
+      description: description
+      owned_by: owned_by
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/mistral-models-openapi.yml#DELETE /models/{model_id}
+    - openapi/_original/mistral-models-openapi.yml#GET /models
+    - openapi/_original/mistral-models-openapi.yml#GET /models/{model_id}
+    - openapi/_original/mistral-models-openapi.yml#PATCH /models/{model_id}
+  training_run:
+    path_segment:
+    - jobs
+    properties:
+      id: id
+      status: status
+      created_at: created_at
+      updated_at: modified_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/mistral-fine-tuning-openapi.yml#GET /fine_tuning/jobs
+    - openapi/_original/mistral-fine-tuning-openapi.yml#GET /fine_tuning/jobs/{job_id}
+    - openapi/_original/mistral-fine-tuning-openapi.yml#POST /fine_tuning/jobs
+    - openapi/_original/mistral-forge-openapi.yml#GET /forge/training/jobs
+    - openapi/_original/mistral-forge-openapi.yml#GET /forge/training/jobs/{job_id}

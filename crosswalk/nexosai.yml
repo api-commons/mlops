@@ -1,0 +1,12 @@
+provider: nexosai
+apis_io: https://apis.io/providers/nexosai/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/nexosai-gateway-openapi-original.yml#GET /v1/models

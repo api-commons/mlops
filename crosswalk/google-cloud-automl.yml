@@ -1,0 +1,34 @@
+provider: google-cloud-automl
+apis_io: https://apis.io/providers/google-cloud-automl/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: datasetId
+      name:
+      - name
+      - displayName
+      created_at: createTime
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/openapi.yml#DELETE /projects/{projectId}/locations/{location}/models/{modelId}
+    - openapi/_original/openapi.yml#GET /projects/{projectId}/locations/{location}/models
+    - openapi/_original/openapi.yml#GET /projects/{projectId}/locations/{location}/models/{modelId}
+    - openapi/_original/openapi.yml#POST /projects/{projectId}/locations/{location}/models
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name:
+      - name
+      - displayName
+      created_at: createTime
+      updated_at: updateTime
+      description: description
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/openapi.yml#GET /projects/{projectId}/locations/{location}/datasets
+    - openapi/_original/openapi.yml#POST /projects/{projectId}/locations/{location}/datasets

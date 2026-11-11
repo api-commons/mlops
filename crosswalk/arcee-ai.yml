@@ -1,0 +1,37 @@
+provider: arcee-ai
+apis_io: https://apis.io/providers/arcee-ai/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id:
+      - id
+      - model_id
+      name:
+      - display_name
+      - name
+      created_at:
+      - created_at
+      - created
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/arcee-ai-afm-openapi.json#DELETE /app/v1/access_profiles/{profile_id}/models/{model_id}
+    - openapi/_original/arcee-ai-afm-openapi.json#DELETE /app/v1/models/{id}
+    - openapi/_original/arcee-ai-afm-openapi.json#GET /api/v1/models
+    - openapi/_original/arcee-ai-afm-openapi.json#GET /app/v1/models
+    - openapi/_original/arcee-ai-afm-openapi.json#GET /app/v1/models/{model_id}
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      id: id
+      status: status
+      started_at: started_at
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/arcee-ai-afm-openapi.json#GET /app/v1/arcee-admin/automated-reports/runs
+    - openapi/_original/arcee-ai-afm-openapi.json#GET /app/v1/arcee-admin/automated-reports/runs/{run_id}

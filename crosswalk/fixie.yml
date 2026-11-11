@@ -1,0 +1,13 @@
+provider: fixie
+apis_io: https://apis.io/providers/fixie/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/fixie-ultravox-openapi-original.yml#GET /api/models

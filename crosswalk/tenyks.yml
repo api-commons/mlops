@@ -1,0 +1,14 @@
+provider: tenyks
+apis_io: https://apis.io/providers/tenyks/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name: display_name
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/tenyks-openapi.json#GET /api/workspaces/tenyks/datasets
+    - openapi/_original/tenyks-openapi.json#POST /api/workspaces/tenyks/datasets

@@ -1,0 +1,16 @@
+provider: rightnow
+apis_io: https://apis.io/providers/rightnow/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: id
+      created_at: created
+      owned_by: owned_by
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/rightnow-openapi.json#GET /models
+    - openapi/_original/rightnow-openapi.json#GET /models/{model}

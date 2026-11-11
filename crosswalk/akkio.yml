@@ -1,0 +1,34 @@
+provider: akkio
+apis_io: https://apis.io/providers/akkio/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id:
+      - model_id
+      - dataset_id
+      - id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/akkio-api-openapi.yml#DELETE /models
+    - openapi/_original/akkio-api-openapi.yml#GET /models
+    - openapi/_original/akkio-api-openapi.yml#POST /models
+    - openapi/_original/akkio-platform-api-openapi.json#GET /admin/llm/models
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name: name
+      id:
+      - dataset_id
+      - id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/akkio-api-openapi.yml#DELETE /datasets
+    - openapi/_original/akkio-api-openapi.yml#GET /datasets
+    - openapi/_original/akkio-api-openapi.yml#POST /datasets
+    - openapi/_original/akkio-platform-api-openapi.json#GET /slack/channels/datasets
+    - openapi/_original/akkio-platform-api-openapi.json#POST /slack/channels/datasets

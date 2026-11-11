@@ -1,0 +1,13 @@
+provider: understudy-labs
+apis_io: https://apis.io/providers/understudy-labs/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/understudy-labs-desktop-api-openapi.json#GET /v1/models

@@ -1,0 +1,18 @@
+provider: amazon-forecast
+apis_io: https://apis.io/providers/amazon-forecast/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  dataset:
+    path_segment:
+    - datasets
+    - dataset
+    properties:
+      created_at: CreationTime
+      status: Status
+      tags: Tags
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/amazon-forecast-openapi.yml#GET /datasets
+    - openapi/_original/amazon-forecast-openapi.yml#GET /describe/dataset/{datasetArn}
+    - openapi/_original/amazon-forecast-openapi.yml#POST /datasets

@@ -1,0 +1,17 @@
+provider: deepnote
+apis_io: https://apis.io/providers/deepnote/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      id: runId
+      status: status
+      created_at: createdAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/deepnote-openapi.yml#GET /notebooks/{notebookId}/runs
+    - openapi/_original/deepnote-openapi.yml#GET /runs/{runId}
+    - openapi/_original/deepnote-openapi.yml#POST /runs

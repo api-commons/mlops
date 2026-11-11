@@ -1,0 +1,29 @@
+provider: determined-ai
+apis_io: https://apis.io/providers/determined-ai/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      name: name
+      created_at: creationTime
+      description: description
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/determined-ai-openapi.yml#GET /api/v1/models
+  experiment:
+    path_segment:
+    - experiments
+    properties:
+      id: id
+      name: name
+      status: state
+      tags: labels
+      end_time: endTime
+      start_time: startTime
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/determined-ai-openapi.yml#GET /api/v1/experiments
+    - openapi/_original/determined-ai-openapi.yml#GET /api/v1/experiments/{experimentId}

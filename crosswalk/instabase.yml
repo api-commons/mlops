@@ -1,0 +1,18 @@
+provider: instabase
+apis_io: https://apis.io/providers/instabase/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  training_run:
+    path_segment:
+    - runs
+    properties:
+      id: id
+      status: status
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/instabase-aihub-openapi.yaml#DELETE /v2/apps/runs/{run_id}
+    - openapi/_original/instabase-aihub-openapi.yaml#GET /v2/apps/runs
+    - openapi/_original/instabase-aihub-openapi.yaml#GET /v2/apps/runs/{run_id}
+    - openapi/_original/instabase-aihub-openapi.yaml#POST /v2/apps/deployments/{deployment-id}/runs
+    - openapi/_original/instabase-aihub-openapi.yaml#POST /v2/apps/runs

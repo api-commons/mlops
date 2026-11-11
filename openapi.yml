@@ -1,0 +1,374 @@
+openapi: 3.1.0
+info:
+  title: MLOps and Model Registry (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common MLOps and Model Registry interface, distilled from the harvested OpenAPI of 342 providers
+    in the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /ml-models:
+    get:
+      operationId: listMlModels
+      summary: List ml models
+      tags:
+      - Ml Models
+      x-commons-tier: core
+      x-commons-share: 0.919
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/MlModel'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createMlModel
+      summary: Create a ml model
+      tags:
+      - Ml Models
+      x-commons-tier: extended
+      x-commons-share: 0.283
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /ml-models/{ml_model_id}:
+    parameters:
+    - $ref: '#/components/parameters/ml_model_id'
+    get:
+      operationId: getMlModel
+      summary: Get a ml model
+      tags:
+      - Ml Models
+      x-commons-tier: extended
+      x-commons-share: 0.475
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    delete:
+      operationId: deleteMlModel
+      summary: Delete a ml model
+      tags:
+      - Ml Models
+      x-commons-tier: extended
+      x-commons-share: 0.283
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+  /datasets:
+    get:
+      operationId: listDatasets
+      summary: List datasets
+      tags:
+      - Datasets
+      x-commons-tier: core
+      x-commons-share: 0.917
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Dataset'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createDataset
+      summary: Create a dataset
+      tags:
+      - Datasets
+      x-commons-tier: core
+      x-commons-share: 0.806
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /datasets/{dataset_id}:
+    parameters:
+    - $ref: '#/components/parameters/dataset_id'
+    get:
+      operationId: getDataset
+      summary: Get a dataset
+      tags:
+      - Datasets
+      x-commons-tier: core
+      x-commons-share: 0.778
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    delete:
+      operationId: deleteDataset
+      summary: Delete a dataset
+      tags:
+      - Datasets
+      x-commons-tier: core
+      x-commons-share: 0.556
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    patch:
+      operationId: updateDataset
+      summary: Update a dataset
+      tags:
+      - Datasets
+      x-commons-tier: extended
+      x-commons-share: 0.444
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /experiments:
+    get:
+      operationId: listExperiments
+      summary: List experiments
+      tags:
+      - Experiments
+      x-commons-tier: core
+      x-commons-share: 0.929
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/Experiment'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createExperiment
+      summary: Create an experiment
+      tags:
+      - Experiments
+      x-commons-tier: core
+      x-commons-share: 0.929
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /experiments/{experiment_id}:
+    parameters:
+    - $ref: '#/components/parameters/experiment_id'
+    get:
+      operationId: getExperiment
+      summary: Get an experiment
+      tags:
+      - Experiments
+      x-commons-tier: core
+      x-commons-share: 0.857
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    delete:
+      operationId: deleteExperiment
+      summary: Delete an experiment
+      tags:
+      - Experiments
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    patch:
+      operationId: updateExperiment
+      summary: Update an experiment
+      tags:
+      - Experiments
+      x-commons-tier: extended
+      x-commons-share: 0.429
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /training-runs:
+    get:
+      operationId: listTrainingRuns
+      summary: List training runs
+      tags:
+      - Training Runs
+      x-commons-tier: core
+      x-commons-share: 0.939
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id004
+                  $ref: '#/components/schemas/TrainingRun'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createTrainingRun
+      summary: Create a training run
+      tags:
+      - Training Runs
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+  /training-runs/{training_run_id}:
+    parameters:
+    - $ref: '#/components/parameters/training_run_id'
+    get:
+      operationId: getTrainingRun
+      summary: Get a training run
+      tags:
+      - Training Runs
+      x-commons-tier: core
+      x-commons-share: 0.758
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    delete:
+      operationId: deleteTrainingRun
+      summary: Delete a training run
+      tags:
+      - Training Runs
+      x-commons-tier: extended
+      x-commons-share: 0.212
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+components:
+  schemas:
+    MlModel:
+      $ref: ./schema/ml_model.json
+    Dataset:
+      $ref: ./schema/dataset.json
+    Experiment:
+      $ref: ./schema/experiment.json
+    TrainingRun:
+      $ref: ./schema/training_run.json
+  parameters:
+    ml_model_id:
+      name: ml_model_id
+      in: path
+      required: true
+      schema:
+        type: string
+    dataset_id:
+      name: dataset_id
+      in: path
+      required: true
+      schema:
+        type: string
+    experiment_id:
+      name: experiment_id
+      in: path
+      required: true
+      schema:
+        type: string
+    training_run_id:
+      name: training_run_id
+      in: path
+      required: true
+      schema:
+        type: string

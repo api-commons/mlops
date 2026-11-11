@@ -1,0 +1,17 @@
+provider: dataiku
+apis_io: https://apis.io/providers/dataiku/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  dataset:
+    path_segment:
+    - datasets
+    properties:
+      name: name
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/dataiku-public-api-openapi.yml#DELETE /projects/{projectKey}/datasets/{datasetName}
+    - openapi/_original/dataiku-public-api-openapi.yml#GET /projects/{projectKey}/datasets
+    - openapi/_original/dataiku-public-api-openapi.yml#GET /projects/{projectKey}/datasets/{datasetName}
+    - openapi/_original/dataiku-public-api-openapi.yml#POST /projects/{projectKey}/datasets
+    - openapi/_original/dataiku-public-api-openapi.yml#PUT /projects/{projectKey}/datasets/{datasetName}

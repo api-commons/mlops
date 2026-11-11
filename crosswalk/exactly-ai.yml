@@ -1,0 +1,16 @@
+provider: exactly-ai
+apis_io: https://apis.io/providers/exactly-ai/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/exactly-ai-public-openapi-original.json#DELETE /public/v1/models/{uid}/
+    - openapi/_original/exactly-ai-public-openapi-original.json#GET /public/v1/models/
+    - openapi/_original/exactly-ai-public-openapi-original.json#GET /public/v1/models/{uid}/
+    - openapi/_original/exactly-ai-public-openapi-original.json#POST /public/v1/models/

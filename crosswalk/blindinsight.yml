@@ -1,0 +1,28 @@
+provider: blindinsight
+apis_io: https://apis.io/providers/blindinsight/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/blindinsight-openapi-original.yml#GET /api/blindllm/models/
+  dataset:
+    path_segment:
+    - datasets
+    - dataset
+    properties:
+      name: name
+      id: id
+      created_at: created
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/blindinsight-openapi-original.yml#DELETE /api/datasets/{id}/
+    - openapi/_original/blindinsight-openapi-original.yml#GET /api/datasets/
+    - openapi/_original/blindinsight-openapi-original.yml#GET /api/datasets/{id}/
+    - openapi/_original/blindinsight-openapi-original.yml#GET /api/organizations/{id}/dataset/{slug}/
+    - openapi/_original/blindinsight-openapi-original.yml#PATCH /api/datasets/{id}/

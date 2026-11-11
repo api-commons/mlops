@@ -1,0 +1,13 @@
+provider: scalable-inference-serving
+apis_io: https://apis.io/providers/scalable-inference-serving/
+context: mlops
+generated: '2026-11-11'
+concepts:
+  ml_model:
+    path_segment:
+    - models
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/kserve-open-inference-protocol-openapi.yml#GET /v2/models/{model_name}
